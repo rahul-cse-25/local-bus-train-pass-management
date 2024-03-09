@@ -19,7 +19,7 @@ Public Transit Pass Manager is a user-friendly mobile application designed to re
 We welcome contributions from developers to enhance the functionality and usability of our app. Feel free to fork the repository, make improvements, and submit pull requests.
 
 **Support:**
-If you encounter any issues or have suggestions for improvement, please don't hesitate to reach out to our support team at rahul.coder.25@gmail.com.
+If you encounter any issues or have suggestions for improvement, please don't hesitate to reach out to support at rahul.coder.25@gmail.com.
 
 **Connect with Us:**
 Stay updated on the latest news and developments by following us on social media:
