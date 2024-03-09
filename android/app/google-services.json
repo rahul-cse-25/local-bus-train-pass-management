@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726617638153",
+    "project_id": "pass-info",
+    "storage_bucket": "pass-info.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726617638153:android:98474ed7437f4e44a27fd8",
+        "android_client_info": {
+          "package_name": "com.example.public_transit_pass_info"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMzPPQSKLrjfXcsdZkQyVvEfugJCYfcEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

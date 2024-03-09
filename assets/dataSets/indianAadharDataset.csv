@@ -1,0 +1,995 @@
+name,dob,gender,address,aadharNumber,phoneNumber,isTrainPassActive,isBusPassActive,image
+Advika Iyengar,10-10-16,male,"18
+Rajan Street
+Begusarai 605475",2.45733E+11,9.11659E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivika Bawa,20-12-82,male,"972, Dara
+Nagercoil-036878",9.92149E+11,9.12865E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vivaan Sastry,28-12-08,female,"44/88
+Trivedi Road
+Aligarh 361224",3.46405E+11,294930776,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Azad Buch,31-05-85,male,"H.No. 26, Gill Marg, Tinsukia-217643",7.29211E+11,9.19817E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Indranil Datta,05-08-49,male,"H.No. 70
+Biswas Marg, Ambarnath-309022",9.15662E+11,6.02702E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anika Sawhney,12-04-20,male,"505
+Ramaswamy Circle, Kollam 850415",6.88403E+11,4459950920,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anya Bhakta,29-04-06,male,"H.No. 36, Seshadri Circle
+Bokaro 112149",7.6099E+11,678856308,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Lakshit Kata,09-09-27,male,"H.No. 916, Sangha Road
+Tiruppur-748389",4.21984E+11,4.09813E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yuvraj  Date,17-10-21,female,"513, Saraf Path
+Munger 841177",5.97617E+11,9.1493E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kiara Malhotra,08-10-09,male,"H.No. 226
+Khanna Chowk, Thrissur-422506",3.72717E+11,3.08849E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anya Dutta,03-07-06,male,"445
+Gole Road, Uluberia 024534",3.71361E+11,5627920464,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Reyansh Brahmbhatt,26-02-62,male,"27
+Bera Zila, Suryapet 687956",2.76714E+11,3.55684E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Diya Thakkar,19-10-90,male,"36/772, Shanker Marg
+Davanagere 206923",9.2554E+11,1807674235,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Eshani Sarraf,30-01-61,male,"H.No. 405, Kalita Circle, Mysore-342372",9.33396E+11,5.42938E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Urvi Kumar,04-04-72,male,"H.No. 910, Sharaf Path
+Surendranagar Dudhrej 044325",5.85823E+11,8.52687E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kanav Sandal,28-07-11,male,"633, Tiwari Marg
+Ulhasnagar-663166",2.58495E+11,6516518923,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ranbir Kara,19-10-44,female,"40/005, Borde Path, Raurkela Industrial Township 217563",6.70007E+11,9.9281E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sana Sura,06-12-69,male,"H.No. 85, Mand Zila, Nagpur-308216",5.18696E+11,85737472275,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Urvi Deshmukh,05-04-82,female,"H.No. 30
+Atwal Nagar, Kamarhati 840231",6.36921E+11,9.19669E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Riya Kibe,01-04-86,female,"24/560, Dewan Chowk, Hindupur-123662",7.8532E+11,4046675549,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rohan Dhar,09-04-09,male,"114, Bala Street
+Jaipur-438377",7.97838E+11,914624502,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dhanuk Saha,13-02-12,male,"H.No. 26, Sama Street
+Satara 316748",8.10806E+11,1190736212,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mahika Thakkar,27-06-52,female,"24/838, Mannan Circle, Ballia-231358",8.78793E+11,1187120532,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tiya Vora,13-04-53,female,"H.No. 87
+Ramakrishnan Street, Jaunpur-039086",5.23328E+11,4.54467E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Azad Agate,13-06-10,female,"009, Sen Path
+Ballia-951557",8.89418E+11,5.30876E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tushar Buch,11-01-19,male,"H.No. 32
+Lala Marg
+Bongaigaon 004533",3.52182E+11,286785256,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vanya Hayre,08-02-68,male,"36/616, Bhatnagar
+Thiruvananthapuram 005661",2.76846E+11,912784757,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Onkar Vala,05-06-02,female,"H.No. 88, Srinivas Path, Thane 801253",3.91775E+11,918991332,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Umang Sarna,29-06-80,male,"H.No. 46, Kala Chowk, Surat-739481",36319828156,7.2516E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Arnav Singh,31-03-29,male,"H.No. 13, Date Road
+Sultan Pur Majra 321584",6.1146E+11,9.11733E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Arnav Sangha,01-10-85,female,"61/339
+Viswanathan Chowk, Kirari Suleman Nagar-212757",9.19502E+11,7.09964E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saksham Chakrabarti,18-06-86,male,"H.No. 183, Bhatt Street, Jaipur 524978",1.57807E+11,2.60789E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kiaan Bandi,13-04-58,female,"658
+Ratti Nagar
+Korba 071339",5.77986E+11,5105831709,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ryan Bhakta,07-02-00,female,"H.No. 02, Bail Marg, Kakinada 249901",7.19092E+11,916760877,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anika Dube,26-11-62,female,"65, Rastogi Road, Jamnagar 824772",2.85775E+11,9106862821,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vanya Dara,08-02-44,male,"01/899
+Contractor Zila
+Ambala-449586",1.48629E+11,58007690961,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Saksham Bhalla,30-05-92,female,"50/395, Dada Path, Bihar Sharif-707182",3.49301E+11,2.09186E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kimaya Bhat,25-07-62,male,"87, Sheth Ganj
+Kulti-836865",6.89358E+11,3392680761,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Reyansh Lad,04-07-18,female,"H.No. 57
+Raval Chowk
+Raipur 658874",8.70214E+11,70416809322,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zoya Kothari,27-03-96,male,"05
+Bala Nagar, Phusro 221550",7.36377E+11,7898230152,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nirvaan Choudhary,13-09-37,female,"01/21
+Seshadri Nagar, Nagaon-304300",6.49101E+11,3.97193E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Neysa Badami,16-04-32,female,"H.No. 19, Ben Marg
+Naihati 923342",7.09979E+11,7.50988E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Himmat Talwar,09-02-03,male,"198, Tripathi Nagar, Yamunanagar-045663",4.25653E+11,6687214655,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aradhya Gera,18-01-01,male,"665
+Goyal Chowk, Amaravati-306891",2.36952E+11,2718687301,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aarav Balasubramanian,08-12-50,male,"419, Srinivasan Nagar
+Nangloi Jat 158294",4.72035E+11,915708934,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kismat Gokhale,14-11-69,male,"84/90
+Mangal Circle, Nashik 088928",3.92651E+11,4.82264E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Amira Kota,18-02-78,female,"H.No. 82
+Ramesh
+Vadodara-971280",36319641259,53008104781,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rohan Suresh,07-03-10,male,"04/46, Sabharwal, Arrah 980814",9.81954E+11,911650576,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tanya Bhalla,22-11-24,male,"H.No. 28, Bera Circle, Medininagar-356047",8.51234E+11,9994615572,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Biju Mammen,06-01-86,male,"H.No. 08, Chahal Ganj
+Thanjavur 200074",1.41897E+11,5863823123,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tushar Dyal,21-11-91,female,"37
+Sastry Nagar, Dharmavaram 111747",7.7621E+11,7812930156,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Shanaya Korpal,23-01-41,female,"85
+Sen Circle
+Berhampore 133189",2.095E+11,7644865570,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ela Sekhon,11-10-08,female,"H.No. 130, Kale Street, Agartala-910898",3.80838E+11,7.04062E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jivika Cheema,20-12-69,female,"528, Dar Path
+Panvel 844882",8.20143E+11,7593875159,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samar Kibe,02-04-64,male,"72/186
+Choudhry
+Deoghar-879238",7.21679E+11,916648375,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jayesh Vyas,04-04-01,female,"50/08
+Kadakia Street
+Medininagar 448951",2.70181E+11,765970414,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Siya Jain,15-01-19,female,"H.No. 71, Chacko, Allahabad 160394",6.25137E+11,9169404205,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lakshit Biswas,26-05-13,male,"72/033, Ahluwalia Ganj, Mango-417959",1.47091E+11,9.17688E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Madhav Manda,22-10-48,female,"58/917
+Bumb Marg
+Dhule 530713",4.89195E+11,9.11968E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Himmat Acharya,05-08-95,male,"H.No. 80
+Kapadia Path
+Shimla-579276",4.82515E+11,9108266080,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yashvi Lall,13-02-06,male,"13
+Sura Ganj, Imphal 936533",7.19905E+11,9189357307,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Bajaj,20-09-20,male,"H.No. 39, Sawhney Marg
+Unnao 705841",9.65932E+11,4.5438E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Oorja Sahota,03-11-73,male,"H.No. 43, Swaminathan Path, Jaunpur-766551",5.09983E+11,9179179758,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tushar Sami,22-07-82,female,"54/959
+Cherian Street, Rajkot 093840",2.74823E+11,915783009,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hiran Madan,18-02-49,female,"H.No. 50
+Grover Road
+Raiganj 004560",9.11297E+11,75821296,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rasha Thaman,01-08-63,female,"12/33
+Gade Chowk
+Begusarai-950057",1.11286E+11,4139667434,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Veer Dhillon,22-08-53,male,"82
+Baral Marg
+Bhiwandi 660504",17875050274,5103994469,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Uthkarsh Kurian,25-03-20,female,"586
+Dada Street, Hubli–Dharwad-627776",5.77069E+11,9829502779,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lakshay Kunda,15-12-46,male,"23, Choudhry Road
+Navi Mumbai 617837",1.14438E+11,86438854054,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Renee Chada,09-03-09,male,"H.No. 95, Dubey Chowk
+Shivpuri-749883",8.74336E+11,9.18861E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anika Kapoor,15-11-58,male,"20/719
+Sura Chowk
+Haridwar 844403",3.59796E+11,9191735289,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aaryahi Joshi,14-10-59,female,"H.No. 52
+Srinivasan Street, Nagpur-537759",3.67909E+11,2.22763E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Divit Brar,16-03-28,female,"96/857
+Mall Zila
+Mira-Bhayandar 416542",80758103027,9168382570,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Amani Randhawa,24-03-26,female,"H.No. 33
+Rao Zila, Nangloi Jat 107919",3.37786E+11,912917021,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Charvi Bobal,19-12-16,male,"20/405, Singh Path
+Aurangabad 472216",97676839012,2.52978E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hansh Bala,22-07-06,male,"90
+Gill Street, Gandhidham-501627",8.93196E+11,7169940261,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Faiyaz Kari,28-06-73,female,"875
+Sarraf Road
+New Delhi-543330",8.23558E+11,3282906690,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jiya Mangat,01-09-13,male,"H.No. 320, Mahajan Street, Cuttack-332700",1.52127E+11,9.12811E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Lagan Chandran,23-06-73,female,"H.No. 42, Barad Circle
+Ghaziabad-670201",9.4014E+11,35603759049,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tara Majumdar,10-04-91,female,"H.No. 099
+Kakar Chowk
+Sambhal-169113",4.62624E+11,911908112,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sana Dora,01-08-14,female,"18/97, Devan, Jammu 719932",4.34594E+11,8.05987E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samiha Tiwari,19-10-27,male,"33/77, Subramaniam Road
+Guwahati 363045",9.59744E+11,9197805413,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mahika Balakrishnan,20-06-58,female,"81/35, Krishnan Nagar
+Tezpur 577058",66063723006,642989881,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hansh Chatterjee,25-03-51,male,"36/22, Dayal Nagar, Kochi 841169",4.9373E+11,6227279222,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tiya Chana,24-06-08,male,"83/47
+Bhalla Marg, Chennai 563895",3.17205E+11,63548272219,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aaina Uppal,17-12-31,female,"H.No. 05
+Vora Ganj, Malegaon-416392",1.11176E+11,1.15683E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saksham Aggarwal,17-01-50,female,"92, Kuruvilla Marg, Srikakulam 223471",35574420976,9.19839E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Shlok Aurora,12-04-07,female,"61/46
+Deshpande Path, Bijapur-864696",7.71364E+11,9.10848E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Emir Majumdar,14-10-15,female,"86, Toor Circle
+Rewa-715104",9.66763E+11,11849283358,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zain Shankar,21-08-26,male,"063, Sathe Road, Panvel 784317",9.8782E+11,2.25611E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anya Swamy,13-01-11,male,"12/791, Mani Chowk, Sikar-747601",4.66023E+11,913789239,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Bhavin Buch,21-08-91,female,"40
+Bhatt Path
+Malegaon 628189",6.95016E+11,9.11698E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Nitara Bahri,31-05-78,male,"H.No. 645, Ghosh Ganj, Rourkela 313497",6.20404E+11,9117211585,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shalv Raj,28-06-08,male,"37/723
+Sharaf Path
+Solapur 475717",9.51043E+11,6.66596E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Himmat Kurian,12-04-47,male,"55/911, Tank Path, Aligarh-779849",1.70761E+11,249924360,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vihaan Chanda,12-06-10,male,"62/360
+Devan Ganj
+Mathura-458778",8.85795E+11,9117006475,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Stuvan Dasgupta,24-10-43,male,"692, Jani Nagar
+Amaravati 826463",1.78994E+11,8039427839,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nayantara Dash,18-08-26,female,"745, Goswami Street
+Bhopal-889454",9.83816E+11,54019832085,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tejas Vora,05-05-11,male,"80
+Badami Chowk, Rohtak-060215",9.34481E+11,254942517,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Sagar,29-09-23,female,"40/816
+Das Nagar
+Tiruppur-017639",3.12889E+11,9.16636E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tiya Kala,14-03-44,female,"52
+Tara Path
+Barasat-347137",9.07971E+11,1227622145,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Piya Swaminathan,27-02-91,female,"28, Bahl Marg
+Nashik-117225",4.29388E+11,3801885446,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Urvi Dass,12-11-42,female,"10/722
+Sarna Zila
+Tirupati 990266",9.05166E+11,837743540,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Umang Tiwari,06-03-63,male,"33/100
+Choudhary Zila
+Bikaner-695415",3.52212E+11,917919640,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hansh Dey,17-01-74,male,"09/76, Thaman Road, Fatehpur-966075",1.53556E+11,9.10759E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Priyansh Mahajan,20-11-23,female,"H.No. 315
+Bajwa Ganj, Kishanganj 154575",5.11423E+11,6182890949,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sara Dugal,07-12-56,female,"12/397
+Kakar Circle
+Tirunelveli 660254",8.69E+11,919889157,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Devansh Dua,04-06-85,male,"972, Gupta Ganj
+Srikakulam-292191",5.61201E+11,9129825029,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anay Kala,19-06-22,female,"23/715
+Kaur Nagar
+Katihar-088357",3.9638E+11,9.11895E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Alia Ramaswamy,27-01-54,female,"H.No. 78
+Gara Marg
+Gwalior-674272",9.75434E+11,1.23972E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saksham Subramanian,06-07-41,male,"47, Chadha Chowk
+Patna-569272",7.23704E+11,9193805055,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samiha Andra,06-10-33,female,"04/711, Gill Circle, Bihar Sharif 835448",543632302,2608283041,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kavya Wali,02-03-14,male,"76
+Seth, Jamalpur 923487",7.77862E+11,7380927198,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tejas Chatterjee,11-04-04,female,"H.No. 554, Doshi, Kakinada 201683",4.628E+11,9.10867E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Miraya Rama,25-02-76,male,"09/930, Majumdar Path
+Davanagere 864323",1.40544E+11,9178201043,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hunar Keer,15-11-16,male,"32/50, Dara Street, Bally-612242",7.04169E+11,7658730662,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Priyansh Garg,18-12-76,female,"02, Bumb Zila, Dibrugarh-578829",9.70957E+11,1.23477E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Neysa Vala,02-11-18,male,"83, Sekhon Marg, Satara 301906",17596095744,3552636431,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Amani Karan,26-02-70,male,"H.No. 113
+Rama
+Bulandshahr-427544",2.46557E+11,8.83071E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivika Chaudry,22-08-85,female,"H.No. 22
+Agrawal Path, Jodhpur 248787",7.80307E+11,915801809,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kanav Sangha,15-10-96,male,"H.No. 71
+Sule Marg
+Bellary 437551",58469803692,6956088580,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Drishya Dey,17-01-18,male,"51/426
+Chaudhry Path, Mau 907656",75634358056,25677570040,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nishith Issac,05-08-95,female,"H.No. 251, Chada Path, Chandigarh-331301",8.98112E+11,71387936522,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Azad Dubey,19-10-62,female,"H.No. 66
+Thakkar, Ghaziabad-626064",1.8306E+11,917773417,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Badal Bhandari,09-01-62,male,"34, Kala Road, Gulbarga-511505",7.60755E+11,9.11955E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Neelofar Sinha,11-07-19,male,"21/78, Tata, Madanapalle-013461",4.74465E+11,9.99187E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Saira Bala,05-12-05,female,"195
+Saha Path, Alwar 938037",5.90143E+11,302893627,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Taran Rattan,24-04-78,female,"H.No. 239, Vyas
+Jorhat-889111",9.91737E+11,2326834196,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vritika Deol,08-09-75,male,"46/448, Chawla Ganj, Saharsa-106376",3.46185E+11,9.11768E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Amani Dhingra,12-11-59,male,"72/948
+Swaminathan Zila
+Tadepalligudem 396631",6.87237E+11,2.21881E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Prisha Garg,16-07-01,male,"71/68, Kothari Road, Ambala 638095",2.91296E+11,8105723215,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Taimur Saraf,06-09-77,male,"47/702
+Sandhu Ganj, Begusarai 972353",9.72158E+11,8728031292,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tejas Wason,20-07-90,male,"88, Sahni Circle
+Karawal Nagar-701124",9.15233E+11,9.10765E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivika Bahl,22-12-07,female,"277
+Sachdev Road
+Jehanabad 171182",8.48554E+11,9188210654,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zara Chowdhury,24-07-05,male,"81/834
+Uppal Zila, Kolhapur 126882",3.60239E+11,64686255725,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Manjari Madan,29-02-08,male,"67/82
+Krishna
+Khora -757139",92486557005,6500744755,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Renee Golla,29-11-44,male,"98/12
+Choudhary Marg, Siliguri 297747",4.96539E+11,1.88683E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samaira Kakar,02-12-31,female,"H.No. 16
+Chana Circle
+Barasat 357662",7.25478E+11,791669066,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Navya Mandal,26-09-08,male,"H.No. 976
+Tailor Road
+Kottayam 351841",1.68566E+11,3.97695E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Purab Gour,08-10-09,female,"39, Goda Ganj, Begusarai-122688",6.09648E+11,9.10868E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ayesha Uppal,07-01-25,female,"H.No. 270
+Mangat Street, Ramgarh 956379",4.07455E+11,3.97973E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Alia Garde,06-08-54,male,"82
+Dave Zila, Nangloi Jat 842130",5.93414E+11,1279635705,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hiran Malhotra,16-11-84,male,"95/906
+Mangal Path, Gangtok-979119",8.59963E+11,277656302,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivin Konda,29-04-08,female,"35/19
+Lanka Marg
+Danapur-902891",5.67203E+11,91896904299,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Eva Tailor,05-06-68,female,"H.No. 38
+Upadhyay Nagar
+Kanpur 509990",4.25426E+11,4868366213,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Parinaaz Bail,05-03-73,female,"85
+Kaul Circle
+Karimnagar 340726",5.63902E+11,2361920320,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Heer Sule,06-10-86,female,"H.No. 34
+Sarma Ganj, Narasaraopet 835444",1.78636E+11,199033243,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Renee Thakkar,02-09-61,female,"H.No. 92
+Madan Chowk
+Panvel 380491",4.86046E+11,919957359,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vihaan Bhattacharyya,16-01-69,male,"98/756, Krishnan Road, Bongaigaon-749514",7.8375E+11,7688916923,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yakshit Dhar,25-10-39,male,"33, Baral Ganj
+Anantapuram-578636",1.90264E+11,9197052626,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Lavanya Bali,18-05-66,male,"H.No. 16
+Dutt, Gudivada 540437",9.28115E+11,8110617010,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kimaya Dash,04-12-19,male,"57/488
+Walla Circle, Gudivada-795814",6.58214E+11,9168274529,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Cherian,07-08-54,female,"821, Bassi
+Bidhannagar-436115",2.9398E+11,2869945055,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vivaan Bali,21-02-66,male,"40, Edwin Street
+Burhanpur 575806",8.50694E+11,9176043183,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anahi Raman,06-02-48,male,"H.No. 439, Goda Chowk
+Tiruvottiyur-294716",4.76493E+11,9.59768E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mannat Iyengar,23-09-84,male,"H.No. 24, Mani Circle
+Darbhanga-356746",1.37438E+11,6.20999E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aayush Dugar,08-02-79,male,"17/71
+Hayre Nagar
+Bharatpur-978643",7.41152E+11,56889849896,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Manjari Koshy,10-11-18,male,"97/016
+Swaminathan Street, Tadepalligudem-049461",8.5463E+11,1.90762E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Manikya Jhaveri,26-11-09,male,"791
+Dasgupta Circle
+North Dumdum 931971",3.13389E+11,9166793517,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shayak Iyer,19-10-43,male,"99
+Khalsa Marg, Mira-Bhayandar 320237",8.83985E+11,912729933,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Sana Srinivas,27-02-34,male,"H.No. 94, Ratta, Raipur 701785",1.75354E+11,2.69976E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tushar Acharya,10-04-13,male,"H.No. 452
+Bhatt Marg
+Khandwa 993336",6.32629E+11,9138301424,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aarna Bhakta,30-12-23,female,"955
+Kapadia Street, Kharagpur 263841",4.17241E+11,9.13687E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Advika Ramesh,21-06-18,male,"32, Chandran Circle
+Meerut-665559",21804193751,9.14706E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Misha Chakraborty,19-11-76,male,"77/65
+Upadhyay Circle, Ramgarh-692875",9.66341E+11,9.19611E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anahita Bhatt,25-09-68,female,"76
+Lalla, Danapur-341219",5.51265E+11,9.15927E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Amira Sandhu,19-06-16,female,"43
+Swamy Chowk, Haridwar-268280",36635977650,6389791094,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Charvi Mallick,04-07-55,male,"23
+Swamy Nagar
+Surat 894095",6.62383E+11,919972046,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shalv Sandal,25-05-19,male,"07/322, Chopra Road, Panipat-115012",9.28034E+11,9439793675,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vardaniya Khatri,05-08-96,female,"36/666
+Bhatia Chowk, Siwan-009436",1.19458E+11,6.81197E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Eshani Raju,08-04-25,male,"H.No. 198
+Wable Road, Anantapur 308707",5.52506E+11,54118380943,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ayesha Venkataraman,28-01-26,female,"27/43
+Sani Path, Ambattur 069981",6.03459E+11,78459126600,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Trisha Ranganathan,04-03-10,female,"68/275, Rana Ganj
+Deoghar 489879",8.76639E+11,2.91788E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vritika Datta,07-07-47,male,"16/106, Sundaram Road, Junagadh-720201",2.31931E+11,706977134,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Baiju Ghosh,20-03-15,male,"88/04, Kalla Chowk, Noida-494493",6.25174E+11,4316925542,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yuvraj  Mani,22-10-38,male,"H.No. 52
+Khanna Nagar
+Ludhiana-757728",7.64012E+11,88407453904,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivika Dewan,08-08-55,female,"H.No. 907
+Sahota Circle
+Kumbakonam 576813",2.86424E+11,3.25766E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhanuk Bose,24-09-50,female,"12/350, Krishnan Marg, Meerut 955420",8.85616E+11,1770810586,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samiha Kar,24-03-85,female,"62, Acharya Circle
+Bhavnagar 573715",5.42079E+11,45416844427,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Umang Bir,21-03-77,female,"016, Rama Road, Raiganj 898782",87591442197,55957647087,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anahi Char,22-07-94,female,"H.No. 845
+Manne Marg
+Sagar 697975",7.16414E+11,80407971235,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Alia Dutt,26-04-14,male,"H.No. 651
+Sant
+Vasai-Virar-356528",9.91976E+11,4757604197,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aarav Sura,22-01-05,male,"15
+Sama Path
+Chennai-007135",3.71717E+11,46266184553,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kartik Hari,28-07-75,male,"846, Behl Street
+Nandyal 112355",2.07068E+11,4107870760,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Taimur Shetty,22-09-66,female,"10/91
+Dyal Zila
+Ramgarh-616772",8.56085E+11,9126556787,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kaira Dara,23-12-74,female,"07
+Vaidya Road, Hapur-447694",4.42618E+11,9.12993E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dishani Rajagopalan,13-01-84,male,"53/727
+Goel Street
+Raipur 376224",33760686136,9559226560,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Urvi Sanghvi,26-09-73,male,"152
+Ahluwalia Ganj
+Machilipatnam-511428",6.92234E+11,914954309,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tushar Mangat,01-12-49,male,"04/21
+Chahal Nagar
+Medininagar-295433",1.954E+11,9178339488,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jiya Kothari,22-02-81,male,"43/48
+Sibal Marg, Barasat-996396",7.19989E+11,3.42653E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nayantara Salvi,01-05-53,female,"17/141, Bir Path
+Mehsana-997475",8.81008E+11,9027117119,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Badal Anne,14-06-60,male,"59, Ram Road, Panihati-138284",34670166891,9.10846E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shamik Chana,26-10-61,female,"H.No. 74, Bal Path, Varanasi 024449",6.02887E+11,9158964170,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ela Sehgal,10-08-64,male,"77/641, Vala Circle
+Sikar-969471",5.73998E+11,739207063,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yuvraj  Rau,23-07-38,female,"H.No. 994
+Shukla Street
+Sagar 844814",2.88815E+11,9.40769E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Myra Bali,09-02-77,female,"88, Walia Ganj
+Singrauli 320158",9.03808E+11,156714457,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saanvi Kala,29-03-21,male,"01, Korpal Zila, Medininagar 083392",9.93391E+11,346811067,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ira Choudhury,30-11-37,male,"H.No. 703, Ravel Marg
+Rampur-872191",3.63859E+11,910760100,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Riya Bava,01-03-12,female,"25/232, Dara, North Dumdum 349978",2.0473E+11,61069163805,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saira Contractor,06-02-82,male,"H.No. 45, Shankar Zila, Chapra 590735",8.62654E+11,37658084,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Darshit Sahota,18-06-81,male,"29, Maharaj, Deoghar 260158",3.85834E+11,2568716641,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Riya Virk,19-05-99,male,"229
+Bhasin Path
+Ahmednagar 245712",1.34767E+11,8.08273E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ayesha Bhakta,14-08-39,male,"98/05, Lanka Street
+Bathinda-486299",9.45922E+11,7589810212,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Arhaan Mann,11-09-29,male,"H.No. 59, Deshmukh, Guna-841328",497278314,915709081,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rhea Tata,15-10-88,male,"303
+Tata Ganj
+Sangli-Miraj & Kupwad 557637",3.79883E+11,9.1662E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Akarsh Barman,29-11-87,female,"25
+Din Circle, Durgapur-694498",7.52224E+11,9126711945,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Mehul Gill,25-12-17,female,"75
+Bajwa Marg
+Madurai-119738",7.78448E+11,50786529764,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yashvi Saini,12-06-46,female,"05/41
+Arya Nagar
+Chapra 760279",9.03112E+11,9.44983E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Siya Jhaveri,10-02-05,male,"688
+Kashyap Chowk
+Chandrapur 795034",2.74309E+11,919855637,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Sana Ramaswamy,10-01-24,female,"H.No. 733
+Karnik Road
+Ichalkaranji-534841",2.59537E+11,4.10949E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Damini Jhaveri,21-02-31,male,"499, Dixit Ganj
+Mathura-697525",9.07012E+11,8976466483,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Baiju Halder,06-04-96,male,"648, D’Alia Zila
+Ratlam-619379",2.239E+11,9615936888,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Bhavin Bali,08-12-45,female,"31
+Kanda Marg, Bellary 748884",7.71198E+11,3518895697,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sana Brar,18-03-85,male,"H.No. 025, Gole Road, Cuttack 731767",8.27543E+11,4549086847,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dharmajan Soni,06-08-23,female,"H.No. 72
+Keer Road, Pune 790757",5.35158E+11,47468212668,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Abram Taneja,04-09-88,female,"52/707, Bhandari Circle, Mathura-955322",8.5365E+11,285900027,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Manikya Wason,19-05-23,female,"51/52
+Bedi Ganj
+Secunderabad-989023",25868215121,860946351,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Mamooty Chadha,16-10-30,female,"603
+Choudhry Circle
+Dharmavaram 977188",6.99255E+11,8.85669E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Farhan Jain,28-12-80,female,"511
+Loyal Nagar, Khandwa 358280",10718866534,8.68465E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anay Rege,11-08-19,female,"98
+De Ganj
+Pondicherry 302998",3.92633E+11,9159140472,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Onkar Khosla,24-05-80,male,"H.No. 410
+Bhatnagar Zila, Jalna-366306",7.50281E+11,4.61866E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Inaaya  Ramakrishnan,10-08-37,male,"80/10
+Swaminathan Nagar
+Bhind-096399",2.76359E+11,917827507,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Pihu Subramaniam,23-01-53,female,"H.No. 992
+Chowdhury Circle
+Bathinda 306964",5.10771E+11,816336287,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Riya Agate,07-04-61,male,"25/80, Bhagat Circle
+Munger-729000",7.51456E+11,911619751,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Miraya Kumar,15-09-60,male,"93
+Chopra Path, Proddatur 355901",1.30636E+11,4687337298,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shlok Kapur,13-06-47,male,"92/942
+Gulati Circle
+Kolhapur 607931",8.84029E+11,917640180,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vaibhav Saini,04-04-28,female,"H.No. 79
+Acharya Chowk, Anantapuram 070374",9.8612E+11,9128647710,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sara Swaminathan,26-07-00,male,"76/850, Bala Nagar, Orai-223777",54808242570,918616564,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mannat Guha,13-11-23,male,"H.No. 405
+Sant Marg, Kozhikode 443501",8.2367E+11,9107094067,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Raunak Ramanathan,26-06-95,female,"H.No. 404
+Bal Marg, Jalandhar 541137",8.62164E+11,913936877,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Amani Buch,04-05-71,male,"714
+Sura Marg
+Gangtok 338427",5.01784E+11,7.1092E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Pari Arya,30-06-68,male,"88/18
+Chokshi, Kavali 271110",3.54395E+11,9.10886E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yashvi Bhatt,09-11-92,male,"H.No. 95
+Ramesh
+Silchar-090279",1.46533E+11,3.21176E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Indranil Kale,30-12-52,male,"07/135, Banerjee Path, Malegaon-164896",5.1469E+11,911977445,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ishita Jha,11-09-84,male,"817, Shan Ganj
+Katni 733551",8.634E+11,21945331584,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yuvraj  Sani,25-02-11,male,"712
+Sen Circle, Kozhikode 424387",5.93387E+11,6.46651E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rati Sankaran,15-10-31,male,"H.No. 534
+Bajaj Marg, Thoothukudi 980702",8.58007E+11,4257939142,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kabir Bedi,08-03-19,female,"H.No. 93, Sant
+Siliguri-937983",4.60026E+11,9.10859E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Divit Manne,13-08-11,male,"50, Chand Street
+Bidar 218326",4.53606E+11,9.10951E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Pranay Soman,01-06-14,male,"H.No. 50
+Loyal Street, Bihar Sharif 688295",90063115614,38108807490,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Seher Borra,24-01-27,male,"38/420, Madan Circle, Katni 344551",3.18177E+11,9.18896E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jhanvi Behl,03-10-01,male,"H.No. 02, Bahri Nagar, Amroha-326417",1.70943E+11,196082706,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vanya Mann,20-12-10,female,"H.No. 199, Kant Chowk, Tirunelveli-224038",7.21387E+11,10807520804,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Riya Chana,30-11-87,female,"H.No. 652, Khalsa Street
+Indore 661227",7.93171E+11,9024859681,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zeeshan Varkey,22-09-84,female,"15/60
+Khare Circle, Thoothukudi-429290",1.07972E+11,12829092407,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Keya Mani,15-04-67,male,"H.No. 380
+Goda, Proddatur-129840",2.94897E+11,2389471261,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Divyansh Chaudhry,02-07-20,female,"H.No. 34
+Ram Chowk
+Bhiwandi 597164",8.60684E+11,6.72821E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ivan Garg,30-09-26,male,"18/58, Hans Chowk, Ambarnath 074137",6.85821E+11,918949958,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Zaina Gola,07-11-09,female,"863
+Basu Path, Hindupur-897462",3.42955E+11,4496524482,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anay Manne,22-11-35,female,"H.No. 550, Raj Path, Rampur-363934",5.17163E+11,194987226,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Shaan Handa,09-09-13,male,"73
+Konda Marg, Nellore-198574",6.50253E+11,4376563801,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Saksham Sridhar,03-07-09,female,"89/49, Suresh Zila, Bhalswa Jahangir Pur 887843",9.35823E+11,6.36833E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jayan Sankaran,08-08-25,female,"28/423
+Majumdar Street, Gurgaon-666482",6.35734E+11,5.11856E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Romil Raja,05-08-42,female,"H.No. 866
+D’Alia Ganj, Medininagar-719163",3.19962E+11,85948754366,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samiha Rana,07-07-94,male,"337
+Batta Path, Bhubaneswar 359222",9.99348E+11,9126288929,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Divij Gaba,08-09-74,male,"479, Gulati Chowk
+Gopalpur 922447",5.48936E+11,6.23998E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Neelofar Issac,14-04-88,female,"895
+Anne Ganj, Gorakhpur 622800",7.1897E+11,43636757040,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tejas Trivedi,27-09-23,male,"57/84
+Datta Road
+Bettiah-315853",8.17614E+11,8411958840,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ehsaan Dass,17-06-02,male,"75/27
+Chopra Street
+Mehsana-775908",4.72144E+11,911963638,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Uthkarsh Sandal,29-12-86,male,"35, Keer Nagar, Bidar 748484",1.34468E+11,1.76629E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Akarsh Sekhon,17-12-50,female,"83, Lal Chowk
+Bhimavaram-859563",7.64289E+11,3207121252,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ahana  Sahota,24-02-68,male,"33, Chaudhuri Path, Ghaziabad 024665",9.56906E+11,9.17898E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kiara Choudhury,28-05-61,female,"714
+Sethi Marg, Khandwa 721109",9.25144E+11,1.47923E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Neelofar Sachar,29-12-95,male,"17/417
+Konda Path, Dindigul 545104",6.61111E+11,247958210,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vidur Varghese,08-10-61,male,"77/05, Ramachandran
+Jodhpur-696256",1.21526E+11,6.79866E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vanya Lala,14-11-88,female,"92/048, Mani Path, Hospet-914395",4.55159E+11,8.34573E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Pihu Basu,27-03-56,female,"93
+Gill Nagar, Gudivada 589294",6.55265E+11,979854136,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Farhan Som,01-02-09,male,"H.No. 861
+Cheema Zila
+Chandigarh-664297",7.2984E+11,6.66072E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rhea Krishnan,10-07-11,female,"H.No. 21, Kothari Road
+Anantapur 813906",7.85597E+11,808613490,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rohan Sidhu,23-04-13,female,"84/799, Mane Nagar
+Yamunanagar 019660",8.27432E+11,6329093372,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhruv Wadhwa,16-03-41,male,"72/666, Bhargava Chowk, Ranchi-230947",9.09551E+11,1089298202,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anaya Chandran,31-01-36,female,"H.No. 18, Yohannan Nagar, Bhusawal 755787",8.65657E+11,631656932,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Adira Bora,02-05-61,male,"H.No. 617, Shukla Marg, Proddatur 639784",9.75969E+11,9.12673E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shlok Sani,27-06-41,male,"75/22
+Dara Ganj, Maheshtala-150433",7.12339E+11,3057992407,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Siya Koshy,26-10-06,female,"H.No. 545
+Sengupta Ganj
+Dewas-073125",6.44712E+11,4.8637E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rhea Trivedi,05-04-21,male,"H.No. 224, Dora Road, Haldia-297426",8.42102E+11,1870826734,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dishani Chaudhary,20-03-95,male,"56
+Arya Street, Rewa 057725",1.75207E+11,3.44568E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yuvaan Bhatia,04-05-79,male,"H.No. 62
+Jayaraman Circle
+Durgapur-177699",3.9011E+11,89559840194,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samiha Basak,01-07-88,female,"37/239
+Jani Path, Bhind-298759",8.57943E+11,911663445,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samaira Ben,14-10-61,female,"713, Contractor Marg
+Srinagar-209241",8.04234E+11,5.4257E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Shaan Mannan,24-06-52,male,"H.No. 53, Garde Ganj, Cuttack 302862",7.45007E+11,3767697426,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nayantara Upadhyay,19-11-03,female,"H.No. 978
+Hayer Circle
+Jorhat-216544",6.42183E+11,917926388,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Aarna Sharma,27-11-11,male,"H.No. 57
+Korpal, Ongole 324287",30510857532,910642265,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nishith Karpe,16-02-02,female,"09/74
+Srinivas
+Sangli-Miraj & Kupwad-398276",7.50298E+11,7.50773E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Indrajit Iyengar,04-04-84,female,"88/43
+Chana Ganj
+Panchkula-421654",5.09151E+11,26289188168,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Bhamini Chad,07-10-12,female,"34/42
+Sahni Ganj
+Moradabad 976909",3.8581E+11,9.19847E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Adira Tripathi,11-03-19,male,"838, Sani Nagar
+Ghaziabad 188817",3.27218E+11,290820203,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Indranil Hegde,25-12-39,male,"H.No. 72, Dada Zila, Sirsa-568841",4.65574E+11,917968029,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anya Hayer,06-09-49,female,"61/160
+Bhatnagar Ganj
+Faridabad 186441",79096036243,9389415939,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Drishya Ahluwalia,22-09-74,female,"54/67, Shenoy, Karimnagar-818251",4.49803E+11,9129796180,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Biju Sandal,23-06-69,male,"234
+Chawla Zila
+Tenali-700710",1.69367E+11,76487389210,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vidur Magar,17-07-05,male,"21/05, Chada Circle
+Yamunanagar 998159",5.95372E+11,9179006899,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Raunak Chand,09-07-99,female,"68/59
+Brahmbhatt Road, Burhanpur 087823",1533877796,1020758317,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hiran Agrawal,09-02-11,male,"85/552, Saran Nagar
+Faridabad-982943",1.62648E+11,9.16963E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nitara Sarma,02-05-36,female,"H.No. 92, Kadakia Ganj, Mysore 410517",4.7535E+11,562770806,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sahil Kara,24-10-73,male,"99/032
+Sagar Nagar, Berhampur-985491",7.79147E+11,9.16703E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vihaan Sachar,09-01-08,female,"137
+Garde Ganj, Dhule 979924",1.27202E+11,6.23646E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sahil Dhar,22-08-50,female,"22, Baral Zila, Gudivada 027910",5.14519E+11,9188760872,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Seher Sampath,02-07-23,male,"H.No. 049
+Saini Chowk, Saharsa-896648",8.14567E+11,19983179356,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shamik Rau,08-12-62,male,"07/467, Bath Street
+Kolhapur-725571",2.80251E+11,916864262,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Anahita Sekhon,09-10-78,male,"H.No. 491, Suresh, Munger-717670",9.16595E+11,80568824875,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hiran Agrawal,04-05-01,male,"45
+Shenoy Chowk
+Thane 362987",15652104713,8086996345,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ojas Singhal,22-03-09,male,"89
+Wagle Ganj, Pondicherry-496676",2.81018E+11,8698850656,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Taimur Ranganathan,21-10-51,female,"71/807, Shere Circle
+Mathura-170775",1.00252E+11,810874619,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Heer Vig,05-08-58,male,"79/01
+Dora Chowk
+Aizawl 023993",6.45956E+11,9.1493E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Pari Iyer,22-01-09,female,"H.No. 17
+Hayre Ganj
+Panihati-014412",86341068366,5.13774E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Onkar Rastogi,27-11-61,male,"29, Loke Path, Bulandshahr-720848",40401352429,915924415,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Elakshi Garg,14-10-72,male,"H.No. 418, Rama Ganj
+Burhanpur-482982",6.88175E+11,9.14981E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Amira Chaudhry,17-08-69,female,"H.No. 63, Mannan Street
+North Dumdum-843010",7.0031E+11,9398062198,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Oorja Chaudhuri,09-08-37,female,"735
+Sarma Chowk
+Phusro-396716",9.21929E+11,9.94287E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vritika Gera,18-10-33,male,"H.No. 31, Madan Street, Pudukkottai 751984",5.28458E+11,1.70499E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aarna Jayaraman,25-09-77,female,"48/53, Wadhwa Ganj
+Karawal Nagar 536924",4.08746E+11,9179495735,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Veer Tandon,03-04-83,male,"70/432
+Mall Marg
+Anantapuram-098383",5.59113E+11,31899499770,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ojas Bhat,17-08-24,male,"331, Khalsa Zila
+Ambattur-547810",24406432853,918757530,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Veer Grover,10-10-35,male,"H.No. 889
+Raj Nagar
+Anantapur-871268",84672072197,33957033080,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hrishita Sankaran,26-07-08,female,"04
+Malhotra Path
+North Dumdum-525266",8.05357E+11,9.15957E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vidur Som,21-04-16,female,"862, Din Path, Jamshedpur 188877",9.6541E+11,26307393738,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anay Deep,09-04-15,male,"716, Bassi Road, Jaunpur 119543",67423132619,9129162272,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dhruv Dass,20-08-00,male,"H.No. 67, Cherian Zila, Machilipatnam-149782",2.58657E+11,918617283,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vritika Goyal,08-05-37,male,"22/38
+Sekhon Street
+Amravati-132074",4.06378E+11,67088871639,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Vaidya,13-06-20,male,"93/285
+Hans
+Raebareli-231381",15615773684,1130963534,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Farhan Kunda,30-04-36,female,"81/48, Brar
+Aizawl-568276",3.80633E+11,7909822539,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Gatik Bera,18-10-88,male,"86/43, Bedi Path
+Rajahmundry-865445",2.50776E+11,9359351684,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Purab Krish,10-05-63,male,"94/890
+Salvi Nagar
+Yamunanagar 510951",1.05052E+11,737397700,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Barad,15-10-63,female,"12/15, Bhargava Zila, Unnao 065283",6.60277E+11,9169715627,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vritika Srivastava,18-12-30,female,"H.No. 355, Jayaraman Marg, Jorhat-590201",7.2574E+11,9.10693E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Aarna Bhalla,28-06-82,male,"H.No. 317, Apte Chowk, Rajkot 990662",7.76696E+11,4148795610,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Pari Chakraborty,09-01-65,female,"88
+Swaminathan
+Bilaspur-019941",7242429770,7.05788E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kashvi Dugar,01-11-20,male,"H.No. 83, Dutt Zila, Karnal 633203",8.08021E+11,50456865487,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aaina Anne,24-03-70,male,"27, Gopal Circle, Imphal 381810",2.291E+11,70933715,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Amira Ganesh,04-11-52,female,"28/83, Korpal Ganj, Aligarh 532376",9.90166E+11,5.22648E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Pari Ghosh,01-06-66,male,"671, Srinivas Zila, Jamalpur 961926",2.80615E+11,9.10927E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mahika Trivedi,10-11-61,female,"47/688, Lad Path, Bahraich 709141",5.87285E+11,3258655153,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Fateh Bora,08-07-55,male,"57/12
+Golla Street
+Thiruvananthapuram 605902",6.64809E+11,3.96792E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samar Chaudry,17-06-30,male,"06/45
+Jaggi Circle, Jamshedpur-887231",3.02963E+11,697901688,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jayant Dugar,04-03-10,female,"02/371
+Vala Circle
+Bhusawal-775534",5.64876E+11,9.16731E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Neysa Basu,24-12-34,female,"47, Sood Marg, Khora -586962",6.27852E+11,7376104451,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Akarsh Swamy,06-06-57,female,"44/133
+Upadhyay Marg
+Bhiwani 814294",5.65246E+11,3.72941E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Tanya Bhatt,08-02-24,male,"H.No. 58
+Borra Nagar
+Kavali 795825",6.03806E+11,9508920827,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Lakshay Bumb,20-02-88,male,"84/888
+Kant Marg
+Aligarh-754311",3.43362E+11,9.10895E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Lakshay Sane,22-01-30,male,"H.No. 473, Sachdeva Street, Katihar-778655",1.10541E+11,932945836,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Seher Mangat,02-03-13,male,"55/759, Buch
+Jaunpur 980370",3.78678E+11,92667382228,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Myra Wali,30-05-76,female,"63/63
+Tara Road
+Ahmednagar-443032",5.18936E+11,3588944696,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samaira Shere,15-10-61,female,"H.No. 707, Bala Path, Singrauli 385360",2.97166E+11,731972709,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Himmat Konda,08-01-61,female,"22/49
+Gaba Path
+Avadi-391213",7.73812E+11,6798424778,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Oorja Kibe,20-04-21,male,"947
+Salvi Nagar, Pimpri-Chinchwad-024145",7.13617E+11,9.12972E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rania Baral,28-05-66,female,"88
+Brahmbhatt Street, Gudivada-243633",3.16194E+11,9676631778,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Renee Krishna,18-01-60,female,"40
+Konda Zila, Gulbarga 613897",1.8411E+11,9116785814,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yasmin Ramesh,16-02-91,female,"43/54
+Borah Street, Bhavnagar 960392",2.41847E+11,912755388,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jivika Dutta,14-02-04,female,"H.No. 48, Setty Zila
+Latur 001589",6.74892E+11,910878167,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Biju Loke,12-12-57,male,"H.No. 055, Sharaf Chowk
+Ratlam 536473",3.47563E+11,1.9187E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kavya Bala,10-05-09,male,"H.No. 09
+Warrior, Muzaffarnagar 070819",3.34631E+11,2.99969E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Keya Mammen,30-01-39,female,"H.No. 17
+Kade Circle, Buxar-650633",49587391793,4.74969E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Raunak Gill,19-03-75,male,"76
+Rau Chowk, Kurnool 927226",8.36404E+11,9126095495,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Alia Ramachandran,17-08-44,female,"31/233
+Ganesh Marg, Erode 975626",5.25884E+11,8.80642E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ahana  Bedi,08-06-23,male,"344
+Mangal Street
+Bellary-569389",9.49505E+11,8769455125,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Devansh Buch,22-08-13,male,"56, Bali Zila
+Jamalpur-413692",81719854834,3.7676E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Prerak Sarna,06-01-22,female,"H.No. 119, Krishna Road, Parbhani-157685",6.74756E+11,29798873502,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Akarsh Chanda,08-12-66,female,"70/64
+Tank Street, Junagadh 921922",3.69372E+11,6.51264E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhruv Bajwa,27-05-94,female,"90, Gala Path
+Bhimavaram 009788",3.44185E+11,9.1162E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anaya Shenoy,02-10-64,female,"H.No. 057, Varkey Road, Dibrugarh-140554",2.48009E+11,1647845189,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Devansh Lall,16-12-23,male,"H.No. 832
+Hari Chowk, Gulbarga-945892",7.68215E+11,9.87869E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kimaya Bhasin,16-10-27,female,"12/991, Chandran Chowk
+Ramagundam-069523",74444829601,695870289,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Aniruddh Dube,13-01-96,male,"32, Balasubramanian Zila
+Bhalswa Jahangir Pur-466486",6.91406E+11,3528115275,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rania Rajan,19-03-62,female,"00
+Bhatnagar Ganj, Mysore-176302",9.75939E+11,6368194520,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ishaan Tank,12-06-52,male,"H.No. 03, Vasa Nagar
+Hindupur-522613",9.23617E+11,8409241443,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vritika Wable,14-02-86,female,"58/81, Chand Street
+Bhiwani 131226",8.38671E+11,6.2677E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Aarush Lala,06-08-60,male,"H.No. 870
+Ganguly Street, Bhilai-160951",1.02298E+11,913766706,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kabir Bakshi,16-04-17,male,"34/82, Sekhon Marg
+Dhanbad-715141",2.99292E+11,3169102690,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samaira Deo,20-07-32,female,"72/46, Bhatt Marg
+Vijayanagaram 772482",9.80002E+11,9117465243,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yasmin Dugar,14-02-09,female,"H.No. 10
+Balan Chowk, Dhanbad 762592",7.63943E+11,9.06788E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Faiyaz Johal,13-12-42,male,"34, Mahal Path, Nadiad-500132",7.58503E+11,312775504,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Samarth Thaman,04-10-59,female,"11
+Suri Circle, Gandhinagar-275058",9.15604E+11,1.8877E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vanya Bava,22-04-16,female,"H.No. 02
+Keer Chowk
+Thiruvananthapuram 147737",2.71944E+11,916986734,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samaira Suri,17-03-21,male,"H.No. 937
+Iyer Ganj, Mehsana 600195",6.56568E+11,9117887244,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aaina Karpe,28-03-90,female,"H.No. 055
+Dara Road
+Coimbatore 949146",2.00146E+11,915903462,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kimaya Manne,22-10-43,female,"51, Kakar Marg, Darbhanga-490922",5.24104E+11,9117281920,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Prisha Koshy,11-06-98,female,"348
+Bhattacharyya, Moradabad-874812",2.70704E+11,4.93715E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhanuk Bali,05-08-95,female,"732, Issac Road, Kochi 726117",3.31914E+11,9.16978E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Rania Chanda,28-11-83,female,"262, Shetty, Gaya-017638",1.55029E+11,6048785846,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Alisha Rege,31-03-95,female,"H.No. 548, Vaidya Nagar
+Kishanganj 000778",2.47519E+11,9.17992E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lavanya Vora,30-03-10,male,"41/85, Hayre Zila, Tirunelveli-876319",2.8219E+11,916846855,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shaan Chaudhuri,06-09-38,male,"H.No. 00
+Krishnamurthy Street
+Singrauli-445750",8.6842E+11,1926071304,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Keya Chadha,16-11-00,female,"H.No. 22, Mani Path, Bijapur 540111",9.90677E+11,8.42298E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ritvik Sanghvi,01-01-58,female,"364
+Swamy Ganj
+Akola-841724",5.41765E+11,7.93383E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kanav Sabharwal,21-02-13,male,"H.No. 30
+Chad Zila, Parbhani 176739",3.10663E+11,5187433156,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Baiju Date,12-12-51,female,"01/46
+Lad Circle, Sambalpur 218722",4.51172E+11,470661176,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Aayush Desai,13-01-43,female,"H.No. 88, Sankar Nagar
+Pallavaram-279673",4.31748E+11,601954629,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yuvaan Saha,01-01-15,male,"75, Ramanathan
+Kochi-600594",3.56927E+11,4227883078,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Baiju Barad,10-11-25,female,"15/45, Sachdev
+Ambala-189598",2.27087E+11,9.10812E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anay Yogi,26-01-94,female,"H.No. 388
+Borde Circle, Jalgaon-270493",7.52701E+11,9159138874,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kanav Barad,11-12-47,male,"44/31
+Randhawa Road
+Loni 505732",43898457552,9.10861E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kashvi Mani,17-11-94,female,"H.No. 041
+Dua Street
+Secunderabad-060058",8.29933E+11,511933414,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ivana Karpe,21-02-73,female,"957
+Bora Path
+Thanjavur-353592",7.7551E+11,9.86585E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hunar Bhasin,01-10-08,female,"81/234
+Kunda Road, Ratlam-284843",6.18483E+11,9.3907E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Shamik Shetty,25-01-57,female,"H.No. 77
+Kohli Chowk
+Coimbatore 418505",80235690053,884970419,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yakshit Bora,14-10-40,female,"69/121
+Balan Path
+Narasaraopet-322568",5.07384E+11,420931404,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Miraya Halder,24-11-52,male,"33, Goswami Road, Thane 620078",8.38365E+11,4.27765E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hazel Sandhu,20-05-68,female,"10
+Rout Road, Alwar 656990",9.36671E+11,5887237831,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ishaan Dani,19-12-93,male,"85/361, Uppal Nagar, Pondicherry 559973",2.7114E+11,9179027888,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Fateh Chhabra,29-09-16,male,"50, Balan Marg
+Purnia-720297",8.9499E+11,5787871933,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Devansh Saraf,29-01-15,female,"H.No. 81
+Bhargava
+Amritsar 133166",61671028556,5.11816E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lakshit Bhargava,16-02-42,female,"H.No. 68
+Andra Marg
+Dewas 961535",3.95585E+11,97178373539,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ishita Varma,12-11-44,male,"88/000, Dubey Street, Nanded-010412",7.62673E+11,9156004474,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ritvik Badal,30-11-27,male,"H.No. 904, Comar Zila
+Kavali-192415",9.57193E+11,7889522912,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dhanuk Varghese,09-07-53,female,"934, Andra Path
+Rohtak 036740",5.53969E+11,9.11894E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kavya Bava,30-10-07,male,"H.No. 005
+Saran, Secunderabad-966070",7.94358E+11,9.16693E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Saanvi Vohra,10-10-25,male,"733
+Chakrabarti Ganj, Udaipur 456849",2.87018E+11,9146916367,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Dharmajan Khare,25-10-56,male,"16/626, Datta Ganj, Purnia 406675",6.15232E+11,9129227987,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Zeeshan Chanda,26-02-20,male,"H.No. 93, Rajagopal Road, North Dumdum 468935",66653979414,910836067,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shaan Bhat,20-10-09,male,"841, Sur Circle
+Rewa 186982",6.28564E+11,53977286285,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kismat Jani,01-05-60,male,"H.No. 913
+Taneja Marg, Ahmedabad 482793",5.7164E+11,8818090127,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Madhav Gola,16-06-49,female,"02, Madan Circle
+Hajipur-610495",4.59588E+11,340733262,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Anay Ravi,28-08-65,male,"H.No. 776, Kade, Belgaum 989577",3.51546E+11,32277275245,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hunar Bora,06-06-00,female,"39, Toor Marg
+Bhind-292277",4.16853E+11,6879823510,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zeeshan Soman,03-11-04,female,"H.No. 53, Hari Ganj
+Rajpur Sonarpur-881710",4.52065E+11,1.97721E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Divit Dash,18-11-56,male,"H.No. 442, Gera Street
+Jalandhar-689238",32917910351,9176602391,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Miraan Sule,20-09-35,female,"52/43, Setty Path, Yamunanagar-814531",6.39341E+11,916687213,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lakshit Som,03-02-21,female,"32
+Bera Road, Amravati-558574",19677621320,1.38888E+12,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Farhan Sethi,28-05-82,female,"592, Batra Street, Baranagar 415131",7.37846E+11,9.11922E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jayan Behl,04-06-21,male,"55/52, Sibal Chowk, Junagadh-839062",2.29852E+11,919607541,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Armaan Comar,24-05-90,male,"19/12
+Shah Ganj
+Rewa-544407",9.37197E+11,7408880525,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Urvi Rout,13-05-53,male,"75, Guha Road
+Gudivada-809844",9.6842E+11,163706249,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rhea Vaidya,12-07-99,male,"924, Deshmukh Ganj, Kochi-822967",16566427019,8051600103,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Aniruddh Babu,04-11-69,female,"H.No. 23, Dua Road
+Miryalaguda-781832",7.24904E+11,83758933324,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Manjari Krishnan,15-04-19,male,"094
+Shankar Nagar
+Raurkela Industrial Township 059897",1203104994,913878493,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Emir Sura,23-05-76,male,"27
+Mand Ganj
+Patna-396520",4.79466E+11,9.61953E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Jivika Datta,17-01-11,female,"09/06, Bhatt Path, Nashik-273287",7.37804E+11,914795734,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Ehsaan Char,15-03-84,male,"H.No. 79, Kata Path
+Guntur-439339",2.52344E+11,910732561,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mamooty Sampath,11-04-38,male,"H.No. 38, Hayer Circle, Dhule-366088",4.17982E+11,87587709346,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Nirvaan Tailor,20-05-94,male,"28/80, Lad Ganj
+Ranchi 930547",7.7037E+11,5.83288E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Rati Sachdeva,04-03-64,female,"49/79
+Brahmbhatt Circle, Bhilai 699012",1.14952E+11,63928501017,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Sara Chhabra,29-10-01,male,"649, Ganguly Road
+Nellore-426160",4.04392E+11,54637538283,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Heer Gala,19-03-13,female,"906, Baral Road
+Ulhasnagar 491297",1.3596E+11,9.1581E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Onkar Bhalla,25-02-46,female,"07/726
+Banik Chowk, Srinagar 582472",5.83162E+11,56569312627,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Darshit Zacharia,23-10-47,female,"H.No. 642
+Anne Path
+Panvel 617141",8.52259E+11,944896560,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhanush Kalita,18-09-94,female,"006
+Yohannan Marg
+Gwalior 940672",80065916308,3.86849E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Nishith Sha,06-02-27,female,"87, Bobal Nagar
+Chennai 937909",50770267022,9.17618E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Parinaaz Anne,11-10-26,male,"H.No. 861, Bhat Nagar, Mango-026258",2.70895E+11,20319889216,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ehsaan Chandran,23-12-86,female,"73/46
+Gara Path, Ajmer-991972",2.66558E+11,9.30613E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Jiya Borra,15-03-81,female,"52, Virk Zila, Tiruvottiyur-553537",8.18214E+11,910730075,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zain Shukla,09-09-26,female,"52/54
+Sampath Street, Tumkur 689061",1.04426E+11,7739708662,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Pari Varghese,15-12-31,male,"268, Chahal Marg, Mira-Bhayandar 054011",8.17954E+11,46689636509,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Shayak Karnik,23-06-19,female,"96/532
+Saxena Path
+Nagaon 846468",1.48284E+11,9.13882E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Manjari Sankar,18-12-97,female,"H.No. 381, Kapur Zila, Singrauli-419302",2.68981E+11,289693533,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samiha Sabharwal,12-06-63,male,"03/30, Bhagat Circle
+Khandwa-426732",8.08506E+11,6399954591,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Ojas Kar,23-02-69,female,"839
+Ravi Ganj, Madanapalle 040365",6.69997E+11,1.10869E+12,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Eva Sampath,01-12-06,female,"895, Chandra Zila
+Shivpuri 606048",5.05319E+11,9.16811E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Bhamini Kapoor,10-08-17,male,"H.No. 502
+Seshadri Street, Bhubaneswar 327222",5.76506E+11,9146957264,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kanav Kanda,08-11-88,female,"H.No. 421
+Sibal Ganj
+Adoni-807671",1.05873E+11,569493360,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Diya Sunder,20-11-10,male,"37/74
+Bava Zila
+Gurgaon-321358",6.07963E+11,7.27185E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Taran Taneja,25-02-07,female,"95/31, Kadakia
+Vellore 404649",3.39025E+11,9138398754,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Indrans Chandran,03-02-59,female,"81/636, Halder Ganj
+Ambala 243407",3919324804,912930804,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Abram Aurora,07-12-19,female,"846, Chandra Ganj
+Sasaram 996914",1.7208E+11,913850079,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Lavanya Saha,16-12-55,male,"733
+Krish Path, Patiala-074273",6.04911E+11,915684720,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Prerak Din,24-03-16,male,"40, Hora Marg, Jaunpur 422765",8.4959E+11,910767536,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Indrans Cheema,19-07-17,male,"H.No. 82
+Mahajan Nagar
+Hindupur-703824",5.32869E+11,9149008483,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Romil Char,07-03-68,male,"95/38, Shanker Circle
+Katni 889437",9.4164E+11,8461636440,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Hiran Mahajan,20-11-95,female,"04/274, Ramakrishnan Marg
+Thane-275939",1.90641E+11,9138212802,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Onkar Lall,13-04-99,male,"24, Bhattacharyya Circle
+Pimpri-Chinchwad-517002",6.85029E+11,9136797948,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Advika Hayer,15-05-53,male,"H.No. 10, Swaminathan Zila
+Dehri-682150",6.80109E+11,8707638783,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Sara Borde,03-09-56,male,"H.No. 98
+Sani Nagar
+Buxar 281141",7.89815E+11,4.15906E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tara Sen,10-02-97,female,"64/288
+Vala Street
+Unnao 616358",9.26877E+11,9.14804E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Vanya De,10-01-78,female,"75, Sani Road
+Bongaigaon-701313",8.26292E+11,98759129839,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Fateh Barman,18-08-83,female,"H.No. 78
+Bhattacharyya Nagar, Avadi 418527",2.12959E+11,915635942,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Yashvi Lata,20-02-15,female,"27/171
+Kashyap Ganj, Suryapet-022985",1.52594E+11,97857215521,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Mannat Kalla,30-03-36,female,"H.No. 889, Tak Marg
+Raichur 951593",7.90211E+11,692619152,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Nayantara Rajan,21-06-21,male,"H.No. 827, Chakrabarti Path, Ajmer 164971",7.77632E+11,918697935,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Siya Guha,23-08-96,male,"H.No. 872
+Dass Circle, Siwan 774830",5.90161E+11,7.97838E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mamooty Kothari,03-02-08,female,"H.No. 00, Gera Zila, Cuttack-423513",3.74602E+11,6219900940,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Mannat Khalsa,27-09-09,female,"56, Suresh, Orai 108501",5.1378E+11,9196448232,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Taimur Dar,13-02-35,male,"H.No. 15, Mann
+Davanagere 341470",1.06209E+11,9.18641E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Vedika Khurana,01-12-59,female,"H.No. 13
+Goyal Nagar
+Dhanbad-200695",6.05522E+11,9.1677E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hrishita Sinha,31-01-79,female,"42, Goyal Ganj, Panipat 139607",5.62187E+11,5.78775E+12,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Myra Ravel,09-01-81,male,"H.No. 910
+Balakrishnan Path, Udaipur-136134",8.18039E+11,9.13919E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Yakshit Buch,13-08-93,female,"H.No. 88, Raju Chowk, Korba 718367",7.25107E+11,3759856400,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Zeeshan Joshi,21-09-65,female,"03/92
+Kunda Path
+Aurangabad 598347",7.35674E+11,2.11863E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Suhana Dewan,05-09-66,female,"H.No. 12, Choudhary Nagar, Bhind-193022",3.42196E+11,564908435,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kashvi Rao,17-04-58,female,"22, Garde Marg
+Bally-228684",4.94071E+11,1.22706E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Saanvi Sha,09-08-02,male,"74/030, Brar Marg
+Nashik-186563",95547382126,7.08933E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Oorja Baria,22-11-88,female,"71/32
+Soman Chowk, Sangli-Miraj & Kupwad 348873",2.13277E+11,913635819,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Dhanuk Krish,29-04-87,male,"H.No. 467
+Dhar Zila
+Rewa-047854",4.44867E+11,917994551,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Reyansh Das,12-04-94,female,"836, Yohannan Path
+Bareilly 728491",7.6134E+11,439660173,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Mahika Raja,07-11-28,female,"42/53, Kant Circle
+Bihar Sharif 649762",22898322015,9188557106,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kimaya Kala,27-03-87,female,"19/738, Bhakta Zila, Pudukkottai-803549",7.93703E+11,9.41697E+11,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Samar Toor,29-03-53,male,"181, Sami Path, Bhimavaram-423521",7.67309E+11,9.11813E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Chirag Walla,30-11-70,female,"93/567
+Tiwari Chowk, Kirari Suleman Nagar-074232",2.19618E+11,3871795855,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Manikya Sane,21-11-94,female,"47, Wali Circle
+Kadapa-420183",4.09847E+11,9169274892,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Trisha Khare,11-12-12,female,"H.No. 17, Wali Chowk, Bahraich-601516",4.3568E+11,5.15983E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Kavya Rattan,03-10-09,male,"H.No. 020, Loke Ganj, Bharatpur-503384",9748171773,5677651415,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Uthkarsh Baral,03-08-16,female,"H.No. 781
+Dhaliwal Circle, Barasat 277308",8.5824E+11,854826022,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Azad Ravi,31-07-92,male,"17/24
+Jaggi Ganj, Avadi 330849",3.45164E+11,1.24651E+11,FALSE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Romil Mangal,15-03-18,male,"15, Sarna Circle, Orai-910085",8.13479E+11,6638113358,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Mehul Chada,03-06-18,female,"H.No. 30, Mannan Road, Katihar-774701",7.54099E+11,2.98487E+12,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Hrishita Bansal,17-07-16,male,"H.No. 94, Raja Ganj, Shahjahanpur-220969",7.42249E+11,9.17653E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Tara Gaba,07-12-73,male,"H.No. 91, Sundaram Nagar, Sultan Pur Majra-496059",3.43513E+11,58379521760,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Manikya Ganesan,15-09-07,female,"42/75
+Dora Path, Thanjavur-449446",6.2349E+11,3278262062,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Misha Choudhury,04-10-22,male,"55, Sane Nagar
+Bettiah-181854",7.37501E+11,9.14746E+11,TRUE,TRUE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
+Kavya Banerjee,17-01-03,female,"H.No. 259
+Yadav Circle
+Panipat-440089",1.43256E+11,1313651026,TRUE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\femaleAvatar.gif
+Elakshi Sarraf,17-10-47,male,"87/99, Vig Path
+Akola 302074",50329231343,9.12906E+11,FALSE,FALSE,E:\Mini_Project\public_transit_pass_info\assets\images\maleAvatar.gif
