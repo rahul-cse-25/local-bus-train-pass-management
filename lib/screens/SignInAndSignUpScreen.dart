@@ -5,11 +5,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/constant.dart';
 import 'package:public_transit_pass_info/config/palette.dart';
 import 'package:public_transit_pass_info/config/uiHelper.dart';
 import 'package:public_transit_pass_info/screens/HomeScreen.dart';
+import '../Provider/userProvider.dart';
 import '../config/mongoDB.dart';
+import '../services/authServices.dart';
 import 'TermsAndConditionsPage.dart';
 
 class SignInAndSignUpScreen extends StatefulWidget {

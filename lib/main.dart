@@ -1,19 +1,26 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/mongoDB.dart';
 import 'package:public_transit_pass_info/screens/NotificationScreen.dart';
 import 'package:public_transit_pass_info/screens/SplashScreen.dart';
 import 'package:public_transit_pass_info/screens/referralCode.dart';
+import 'package:public_transit_pass_info/services/authServices.dart';
+import 'Provider/userProvider.dart';
 import 'screens/HomeScreen.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   try {
     await MongoDatabase.connect();
   } catch (e) {
     if (kDebugMode) {
+      print(
+          "*********************************************************************************************");
       print('Error connecting to MongoDB: $e');
+      print(
+          "*********************************************************************************************");
     }
     return;
   }
@@ -21,14 +28,23 @@ void main() async{
     await Firebase.initializeApp();
   } catch (e) {
     if (kDebugMode) {
+      print(
+          "*********************************************************************************************");
       print('Error initializing Firebase: $e');
+      print(
+          "*********************************************************************************************");
     }
   }
-  return runApp(const PassApp());
+  runApp(
+    MultiProvider(providers: [
+      // Add other Providers
+      ChangeNotifierProvider(create: (context) => UserProvider()),
+    ], child: const PassApp()),
+  );
 }
 
-class PassApp extends StatelessWidget{
-  const PassApp({super.key});
+class PassApp extends StatelessWidget {
+  const PassApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +52,7 @@ class PassApp extends StatelessWidget{
       title: "Public Transit Pass Information",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue
+        primarySwatch: Colors.blue,
       ),
       home: const SplashScreen(),
     );

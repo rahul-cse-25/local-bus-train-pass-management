@@ -8,11 +8,13 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/palette.dart';
 import 'package:public_transit_pass_info/screens/referralCode.dart';
 import '../config/constant.dart';
 import '../config/mongoDB.dart';
 import '../config/notificatoinServices.dart';
+import '../Provider/userProvider.dart';
 import 'NotificationScreen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -34,15 +36,21 @@ class _HomeScreen extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    userId = widget.userId.toString();
-    if (kDebugMode) {
-      print("****************************************");
-      getUserData();
-      print("UserInHomeID: $userId");
-      print("****************************************");
-    }
-    notificationServices.requestNotificationPermission();
+
+    Future.delayed(Duration.zero, () {
+      userId = widget.userId.toString();
+      UserProvider userProvider = Provider.of<UserProvider>(context, listen: false);
+      userProvider.setUserId(userId);// Ensure userData is not null
+      if (kDebugMode) {
+        print("****************************************");
+        getUserData();
+        print("UserInHomeID: $userId");
+        print("****************************************");
+      }
+      notificationServices.requestNotificationPermission();
+    });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +59,7 @@ class _HomeScreen extends State<HomeScreen> {
         MediaQuery.of(context).orientation == Orientation.landscape;
     double verticalInternalPadding =
         isLandScape ? screenSize.height * 0.03 : screenSize.height * 0.03;
-    double horizontalcalInternalPadding =
+    double horizontalInternalPadding =
         isLandScape ? screenSize.width * 0.02 : screenSize.width * 0.05;
     double componentContainerSize =
         isLandScape ? screenSize.width * 0.15 : screenSize.width * 0.25;
@@ -63,7 +71,7 @@ class _HomeScreen extends State<HomeScreen> {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Padding(
-            padding: EdgeInsets.all(horizontalcalInternalPadding * 0.8),
+            padding: EdgeInsets.all(horizontalInternalPadding * 0.8),
             child: Column(
               children: [
                 // Intro and Notification with Menu Icon
@@ -117,7 +125,7 @@ class _HomeScreen extends State<HomeScreen> {
                               )),
                         ),
                         SizedBox(
-                          width: horizontalcalInternalPadding,
+                          width: horizontalInternalPadding,
                         ),
                         Container(
                           padding: const EdgeInsets.all(10),
@@ -147,7 +155,7 @@ class _HomeScreen extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: horizontalcalInternalPadding,
+                  height: horizontalInternalPadding,
                 ),
                 // Search Bar
                 Container(
@@ -167,7 +175,7 @@ class _HomeScreen extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: horizontalcalInternalPadding / 2,
+                        width: horizontalInternalPadding / 2,
                       ),
                       Icon(
                         Icons.search,
@@ -177,7 +185,7 @@ class _HomeScreen extends State<HomeScreen> {
                         color: Colors.white,
                       ),
                       SizedBox(
-                        width: horizontalcalInternalPadding / 2,
+                        width: horizontalInternalPadding / 2,
                       ),
                       Expanded(
                           child: TextField(
@@ -204,7 +212,7 @@ class _HomeScreen extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: horizontalcalInternalPadding,
+                  height: horizontalInternalPadding,
                 ),
                 // Train and Bus Pass Data Presentation
                 Container(
@@ -362,7 +370,7 @@ class _HomeScreen extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: horizontalcalInternalPadding,
+                  height: horizontalInternalPadding,
                 ),
                 // Cards in row
                 SizedBox(
@@ -377,8 +385,8 @@ class _HomeScreen extends State<HomeScreen> {
                           padding: EdgeInsets.all(verticalInternalPadding / 2),
                           margin: EdgeInsets.only(
                               right: isLandScape
-                                  ? horizontalcalInternalPadding * 2
-                                  : horizontalcalInternalPadding / 2),
+                                  ? horizontalInternalPadding * 2
+                                  : horizontalInternalPadding / 2),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: isTrain
@@ -405,8 +413,8 @@ class _HomeScreen extends State<HomeScreen> {
                           padding: EdgeInsets.all(verticalInternalPadding / 2),
                           margin: EdgeInsets.only(
                               right: isLandScape
-                                  ? horizontalcalInternalPadding * 2
-                                  : horizontalcalInternalPadding / 2),
+                                  ? horizontalInternalPadding * 2
+                                  : horizontalInternalPadding / 2),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: isTrain
@@ -427,8 +435,8 @@ class _HomeScreen extends State<HomeScreen> {
                           padding: EdgeInsets.all(verticalInternalPadding / 2),
                           margin: EdgeInsets.only(
                               right: isLandScape
-                                  ? horizontalcalInternalPadding * 2
-                                  : horizontalcalInternalPadding / 2),
+                                  ? horizontalInternalPadding * 2
+                                  : horizontalInternalPadding / 2),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: isTrain
@@ -466,13 +474,13 @@ class _HomeScreen extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: horizontalcalInternalPadding,
+                  height: horizontalInternalPadding,
                 ),
                 // QR container
                 Container(
                   width: screenSize.width,
                   height: screenSize.height * 0.4,
-                  padding: EdgeInsets.all(horizontalcalInternalPadding),
+                  padding: EdgeInsets.all(horizontalInternalPadding),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     // color: isTrain ? palette.trainComponantColor : palette.busComponantColor,
@@ -510,12 +518,12 @@ class _HomeScreen extends State<HomeScreen> {
 
   Future<void> getUserData() async {
     userData =
-        await MongoDatabase.fetchUserDetails(userId, USER_DETAILS_COLLECTION);
+        await MongoDatabase.fetchUserDetails(userId!, USER_DETAILS_COLLECTION);
     setState(() {});
     if (kDebugMode) {
       print(
           "*********************************************************************");
-      print('User Data: $userData');
+      print('User Data in Home: $userData');
       print(
           "*********************************************************************");
     }

@@ -3,8 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/constant.dart';
 import 'package:share_plus/share_plus.dart';
+
+import '../Provider/userProvider.dart';
 
 class ReferralCodeScreen extends StatefulWidget {
   const ReferralCodeScreen({super.key});
@@ -16,23 +19,21 @@ class ReferralCodeScreen extends StatefulWidget {
 class _ReferralCodeScreenState extends State<ReferralCodeScreen> {
   @override
   Widget build(BuildContext context) {
+    UserProvider userProvider = context.watch<UserProvider>();
     bool isCopying = false;
+    var referralCode = userProvider.userData.isNotEmpty
+        ? userProvider.userData[0]['referralCode']
+        : 'No referral code available';
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey,
         body: Container(
-          margin: EdgeInsets.all(MediaQuery
-              .of(context)
-              .size
-              .width * 0.02),
+          margin: EdgeInsets.all(MediaQuery.of(context).size.width * 0.02),
           child: Column(
             children: [
               Container(
                 padding:
-                EdgeInsets.all(MediaQuery
-                    .of(context)
-                    .size
-                    .width * 0.02),
+                    EdgeInsets.all(MediaQuery.of(context).size.width * 0.02),
                 width: double.infinity,
                 // height: 100,
                 decoration: BoxDecoration(
@@ -57,7 +58,7 @@ class _ReferralCodeScreenState extends State<ReferralCodeScreen> {
                         // mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
-                            ConstantServices.generateReferralCode(),
+                            referralCode,
                             style: const TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
@@ -72,8 +73,8 @@ class _ReferralCodeScreenState extends State<ReferralCodeScreen> {
                               // You can use the Flutter Clipboard package
                               // For example:
                               Clipboard.setData(ClipboardData(
-                                  text: ConstantServices
-                                      .generateReferralCode()));
+                                  text:
+                                      ConstantServices.generateReferralCode()));
 
                               // Update the state to show the success icon
                               setState(() {
@@ -88,29 +89,31 @@ class _ReferralCodeScreenState extends State<ReferralCodeScreen> {
                             },
                             icon: isCopying
                                 ? const Icon(
-                              Icons.check, // or any success icon
-                              color: Colors.green,
-                            )
+                                    Icons.check, // or any success icon
+                                    color: Colors.green,
+                                  )
                                 : const Icon(
-                              Icons.content_copy,
-                              size: 20,
-                              color: Colors.grey,
-                            ),
+                                    Icons.content_copy,
+                                    size: 20,
+                                    color: Colors.grey,
+                                  ),
                           ),
                           const SizedBox(
                             width: 20,
                           ),
-                          InkWell(onTap: () {
-                            // share link function calling
-                            shareAppLinkWithReferralCode();
-                          }, child: const Icon(Icons.share)),
+                          InkWell(
+                              onTap: () {
+                                // share link function calling
+                                shareAppLinkWithReferralCode(referralCode);
+                              },
+                              child: const Icon(Icons.share)),
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-              TextField(),
+              const TextField(),
             ],
           ),
         ),
@@ -118,9 +121,9 @@ class _ReferralCodeScreenState extends State<ReferralCodeScreen> {
     );
   }
 
-  void shareAppLinkWithReferralCode() {
-    String referralCode = ConstantServices.generateReferralCode();
-    String message = "Check out the app that's changing the game! OvaDrive is not just an app, it's a revolution. Experience innovation at your fingertips and unlock a world of possibilities. $APP_LINK_OF_PLAYSTORE it also give you the reward if you join it by my referral code: *$referralCode*";
+  void shareAppLinkWithReferralCode(var referralCode) {
+    String message =
+        "Check out the app that's changing the game! OvaDrive is not just an app, it's a revolution. Experience innovation at your fingertips and unlock a world of possibilities. $APP_LINK_OF_PLAYSTORE it also give you the reward if you join it by my referral code: *$referralCode*";
     Share.share(message);
   }
 }
