@@ -4,6 +4,32 @@ import 'package:public_transit_pass_info/config/constant.dart';
 
 class MongoDatabase {
 
+  Future<String> fetchUserPassNumber(String aadharNum)async{
+    var db = await Db.create(MONGO_URL);
+    await db.open();
+    try{
+      var collection = db.collection(PASS_DETAILS_COLLECTION);
+      var userQuery = {"aadharNumber": aadharNum};
+      var userDetail = await collection.findOne(userQuery);
+      if (kDebugMode) {
+        print("*********************************************************");
+        print("Pass number : ${userDetail?['passNumber']}");
+        print("*********************************************************");
+      }
+      return userDetail?['passNumber'];
+    }catch(ex){
+      if (kDebugMode) {
+        print("*********************************************************");
+        print("Error while fetching userPassNumber : ${ex.toString()}");
+        print("*********************************************************");
+        return "Data Not found";
+      }
+    }finally{
+    await db.close();
+    }
+    return "Data Not found";
+  }
+
   static Future<List<Map<String, dynamic>>> fetchUserDetails(String email, String dbCollection) async {
     var db = await Db.create(MONGO_URL);
     await db.open();
@@ -77,9 +103,6 @@ class MongoDatabase {
     db.close();
   }
 
-
-
-
   static connect() async {
     var db = await Db.create(MONGO_URL);
     await db.open();
@@ -93,6 +116,10 @@ class MongoDatabase {
     //   print(await collection.find().toList());
     // }
   }
+
+
+
+
 }
 
 

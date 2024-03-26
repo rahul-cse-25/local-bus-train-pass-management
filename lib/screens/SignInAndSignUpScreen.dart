@@ -1,18 +1,15 @@
 import 'dart:math';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/constant.dart';
 import 'package:public_transit_pass_info/config/palette.dart';
 import 'package:public_transit_pass_info/config/uiHelper.dart';
 import 'package:public_transit_pass_info/screens/HomeScreen.dart';
-import '../Provider/userProvider.dart';
+
 import '../config/mongoDB.dart';
-import '../services/authServices.dart';
 import 'TermsAndConditionsPage.dart';
 
 class SignInAndSignUpScreen extends StatefulWidget {
@@ -25,16 +22,20 @@ class SignInAndSignUpScreen extends StatefulWidget {
 class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
   bool isMale = true;
   bool isSignUpScreen = false;
-  bool isRememberMe = false;
   bool isUserName = false;
   bool isHide = true;
   bool isReferralCodeApplied = false;
   var userId = '';
+  bool isTC = false;
+  bool asTC = false;
+
 
   TextEditingController forgetEmail = TextEditingController();
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
   TextEditingController userName = TextEditingController();
+  TextEditingController fullNameOfTC = TextEditingController();
+  TextEditingController idNumber = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +93,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             child: AnimatedContainer(
               duration: palette.formAnimeTime,
               curve: palette.containerFormAnimation,
-              height: isSignUpScreen ? 380 : 250,
+              height: isSignUpScreen && isTC ? 530 : isSignUpScreen && !isTC ? 425 : 250,
               padding: const EdgeInsets.all(20),
               width: MediaQuery.of(context).size.width - 40,
               margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -183,29 +184,6 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             ),
           ),
           buildButtonHalfContainer(false),
-          Positioned(
-              top: MediaQuery.of(context).size.height - 100,
-              right: 0,
-              left: 0,
-              child: Column(
-                children: [
-                  Text(
-                    isSignUpScreen ? "Or SignUp with" : "Or SignIn with",
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(right: 40, left: 40, top: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        buildTextButtonForSocial(
-                            EvaIcons.facebook, "facebook", palette.facebook),
-                        buildTextButtonForSocial(
-                            EvaIcons.google, "google", palette.google),
-                      ],
-                    ),
-                  )
-                ],
-              )),
         ],
       ),
     );
@@ -215,7 +193,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
     return AnimatedPositioned(
         duration: palette.formAnimeTime,
         curve: palette.formAnimation,
-        top: isSignUpScreen ? 515 : 400,
+        top: isSignUpScreen && isTC ? 660 : isSignUpScreen && !isTC ? 555 : 400,
         left: 0,
         right: 0,
         child: Center(
@@ -247,7 +225,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                               email.text.toString(),
                               password.text.toString(),
                               userName.text.toString(),
-                              true);
+                              true,fullNameOfTC.text.toString(),idNumber.text.toString());
                         }
                         email.clear();
                         password.clear();
@@ -284,16 +262,12 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
   }
 
   Widget buildTextField(IconData icon, String hintText, bool isPassword,
-      bool isEmail, bool isUserName) {
+      bool isEmail, bool isUserName, TextEditingController fieldName) {
     FocusNode focusNode = FocusNode();
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
       child: TextField(
-        controller: isUserName
-            ? userName
-            : isPassword
-                ? password
-                : email,
+        controller: fieldName,
         focusNode: focusNode,
         obscureText: isPassword && isHide,
         keyboardType: isEmail ? TextInputType.emailAddress : TextInputType.text,
@@ -365,10 +339,10 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
       child: Column(
         children: [
           buildTextField(
-              Icons.person_2_outlined, "Username", false, false, true),
-          buildTextField(Icons.mail_lock_outlined, "Email", false, true, false),
+              Icons.person_2_outlined, "Username", false, false, true,userName),
+          buildTextField(Icons.mail_lock_outlined, "Email", false, true, false,email),
           buildTextField(
-              Icons.lock_clock_outlined, "Password", true, false, false),
+              Icons.lock_clock_outlined, "Password", true, false, false,password),
           Padding(
             padding: const EdgeInsets.only(top: 10, left: 10),
             child: Row(
@@ -435,6 +409,28 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
               ],
             ),
           ),
+          Row(
+            children: [
+              Checkbox(
+                value: isTC,
+                activeColor: palette.focusedIcon,
+                onChanged: (value) {
+                  setState(() {
+                    isTC = !isTC;
+                  });
+                },
+              ),
+              const Text(
+                "Are you want to Sign Up as  TC (Ticket Collector) ?",
+                style: TextStyle(
+                    color: palette.textDeactiveColor, fontSize: 12),
+              )
+            ],
+          ),
+          if(isTC)
+          buildTextField(Icons.drive_file_rename_outline, "Enter your Full Name", false, false, false,fullNameOfTC),
+          if(isTC)
+            buildTextField(Icons.perm_identity_outlined, "Enter your id number", false, false, false, idNumber),
           Container(
             width: 200,
             margin: const EdgeInsets.only(top: 20),
@@ -457,7 +453,8 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                             })
                     ])),
             // ),
-          )
+          ),
+
         ],
       ),
     );
@@ -468,24 +465,24 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
       margin: const EdgeInsets.only(top: 15),
       child: Column(
         children: [
-          buildTextField(Icons.mail_lock, "Email", false, true, false),
-          buildTextField(Icons.lock, "Password", true, false, false),
+          buildTextField(Icons.mail_lock, "Email", false, true, false,email),
+          buildTextField(Icons.lock, "Password", true, false, false,password),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
                 children: [
                   Checkbox(
-                    value: isRememberMe,
+                    value: asTC,
                     activeColor: palette.focusedIcon,
                     onChanged: (value) {
                       setState(() {
-                        isRememberMe = !isRememberMe;
+                        asTC = !asTC;
                       });
                     },
                   ),
                   const Text(
-                    "Remember me",
+                    "Login as TC ?",
                     style: TextStyle(
                         color: palette.textDeactiveColor, fontSize: 12),
                   )
@@ -502,7 +499,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                     "Forget Password ?",
                     style: TextStyle(
                         color: palette.forgetButtonColor, fontSize: 12),
-                  ))
+                  )),
             ],
           )
         ],
@@ -510,58 +507,78 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
     );
   }
 
-  signUp(String email, String password, String username, bool isMale) async {
-    if (username == '' || email == '' || password == '') {
-      UiHelper.customDialog(context, 'Please Enter valid Credentials', 'Ok');
-    } else {
-      UserCredential? userCredentials;
-      try {
-        userCredentials = await FirebaseAuth.instance
-            .createUserWithEmailAndPassword(email: email, password: password)
-            .then((value) async {
-          await MongoDatabase.saveUserData({
-            "username": username,
-            "email": email,
-            "isMale": isMale,
-            "referralCode": ConstantServices.generateReferralCode(),
-            "isReferralCodeApplied": isReferralCodeApplied
-          }, USER_DETAILS_COLLECTION);
-          if (kDebugMode) {
-            print("**********************************************");
-            print("UserID: $userId");
-            print("**********************************************");
-          }
-          UiHelper.customDialog(
-              context, 'Sign Up Successful Please Sign In to proceed', "OK");
-          setState(() {
-            isSignUpScreen = false;
+  signUp(String email, String password, String username, bool isMale,String fullNameOfTC,String idNumber) async {
+
+    if(isTC && (fullNameOfTC.isEmpty || idNumber.isEmpty)){
+      UiHelper.customDialog(context, "Please fill the TC details", "OK");
+      return;
+    }
+
+    if(isTC && (fullNameOfTC.isNotEmpty && idNumber.isNotEmpty) && !isValidTCdetails(fullNameOfTC,idNumber)){
+      UiHelper.customDialog(context, "Entered TC detail is not correct please fill the correct information or signUp as normal user", "OK");
+      return;
+    }else{
+      if (username.isEmpty || email.isEmpty || password.isEmpty) {
+        UiHelper.customDialog(context, 'Please Enter valid Credentials', 'OK');
+      }
+      else {
+        UserCredential? userCredentials;
+        try {
+          userCredentials = await FirebaseAuth.instance
+              .createUserWithEmailAndPassword(email: email, password: password)
+              .then((value) async {
+            User? user = FirebaseAuth.instance.currentUser;
+            await MongoDatabase.saveUserData({
+              "userUID":user?.uid,
+              "username": username,
+              "email": email,
+              "isMale": isMale,
+              "referralCode": ConstantServices.generateReferralCode(),
+              "isReferralCodeApplied": isReferralCodeApplied,
+              "isTC": isTC
+            }, USER_DETAILS_COLLECTION);
+            if (kDebugMode) {
+              print("**********************************************");
+              print("UserID: $userId");
+              print("**********************************************");
+            }
+            UiHelper.customDialog(
+                context, 'Sign Up Successful Please Sign In to proceed', "OK");
+            setState(() {
+              isSignUpScreen = false;
+            });
+            return null;
           });
-          return null;
-        });
-      } on FirebaseAuthException catch (ex) {
-        return UiHelper.customDialog(context, ex.code.toString(), 'OK');
+        } on FirebaseAuthException catch (ex) {
+          return UiHelper.customDialog(context, ex.code.toString(), 'OK');
+        }
       }
     }
   }
 
   signIn(String email, String password) async {
-    if (email == '' || password == '') {
-      UiHelper.customDialog(context, "Please Enter Credentials", "Ok");
-    } else {
-      UserCredential? userCredentials;
-      try {
-        userCredentials = await FirebaseAuth.instance
-            .signInWithEmailAndPassword(email: email, password: password)
-            .then((value) {
-              userId = email.toString();
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => HomeScreen(userId: userId)));
-          return null;
-        });
-      } on FirebaseAuthException catch (ex) {
-        UiHelper.customDialog(context, ex.code.toString(), "Ok");
+    if(asTC && (email.isEmpty || password.isEmpty) && !isVerifiedTC(email)){
+      UiHelper.customDialog(context, "Incorrect details! Pay attention while login.", "OK");
+    }else{
+      if (email.isEmpty || password.isEmpty) {
+        UiHelper.customDialog(context, "Please Enter Credentials", "Ok");
+      }
+      else {
+        UserCredential? userCredentials;
+        try {
+          userCredentials = await FirebaseAuth.instance
+              .signInWithEmailAndPassword(email: email, password: password)
+              .then((value) {
+            userId = email.toString();
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => HomeScreen(userId: userId,asTC: asTC)));
+            return null;
+          });
+        } on FirebaseAuthException catch (ex) {
+          UiHelper.customDialog(context, ex.code.toString(), "OK");
+        }
       }
     }
   }
@@ -691,5 +708,13 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             hintStyle: const TextStyle(color: Colors.grey, fontSize: 14)),
       ),
     );
+  }
+
+  bool isValidTCdetails(String fullNameOfTC, String idNumber) {
+    return true;
+  }
+
+  bool isVerifiedTC(String email) {
+    return false;
   }
 }

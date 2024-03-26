@@ -1,26 +1,22 @@
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/palette.dart';
+import 'package:public_transit_pass_info/config/uiHelper.dart';
 import 'package:public_transit_pass_info/screens/referralCode.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+import '../Provider/userProvider.dart';
 import '../config/constant.dart';
 import '../config/mongoDB.dart';
 import '../config/notificatoinServices.dart';
-import '../Provider/userProvider.dart';
 import 'NotificationScreen.dart';
+import 'package:intl/intl.dart';
+
 
 class HomeScreen extends StatefulWidget {
   final userId;
-
-  const HomeScreen({super.key, required this.userId});
+  final asTC;
+  const HomeScreen({super.key, required this.userId, required this.asTC});
 
   @override
   State<StatefulWidget> createState() => _HomeScreen();
@@ -32,28 +28,36 @@ class _HomeScreen extends State<HomeScreen> {
   late List<Map<String, dynamic>> userData = [];
   TextEditingController searchText = TextEditingController();
   NotificationServices notificationServices = NotificationServices();
+  final MongoDatabase dbServices = MongoDatabase();
+  late String qrData = '';
+  bool isTrainPassAvailable = false;
+  bool isBusPassAvailable = false;
+  late List<String> userPassDetails;
 
   @override
   void initState() {
     super.initState();
-
+    getQRData();
     Future.delayed(Duration.zero, () {
       userId = widget.userId.toString();
-      UserProvider userProvider = Provider.of<UserProvider>(context, listen: false);
-      userProvider.setUserId(userId);// Ensure userData is not null
+      UserProvider userProvider =
+          Provider.of<UserProvider>(context, listen: false);
+      userProvider.setUserId(userId); // Ensure userData is not null
       if (kDebugMode) {
         print("****************************************");
         getUserData();
         print("UserInHomeID: $userId");
+        print("as Admin: ${widget.asTC}");
         print("****************************************");
       }
       notificationServices.requestNotificationPermission();
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
+    DateTime now = DateTime.now();
+    String formattedDate = DateFormat.yMMMMd('en_US').format(now);
     var screenSize = MediaQuery.of(context).size;
     var isLandScape =
         MediaQuery.of(context).orientation == Orientation.landscape;
@@ -88,9 +92,9 @@ class _HomeScreen extends State<HomeScreen> {
                               fontWeight: FontWeight.w900,
                               color: Colors.white),
                         ),
-                        const Text(
-                          "20 Sept, 2024",
-                          style: TextStyle(
+                        Text(
+                          formattedDate,
+                          style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w300,
                               color: Colors.white),
@@ -143,6 +147,7 @@ class _HomeScreen extends State<HomeScreen> {
                                 if (kDebugMode) {
                                   print('Menu');
                                 }
+                                UiHelper.showMenu(context, "None", "OK",isTrain);
                               },
                               child: const Icon(
                                 Icons.menu,
@@ -215,7 +220,7 @@ class _HomeScreen extends State<HomeScreen> {
                   height: horizontalInternalPadding,
                 ),
                 // Train and Bus Pass Data Presentation
-                Container(
+                widget.asTC ? Container(
                   width: screenSize.width,
                   height: isLandScape
                       ? screenSize.height * 0.50
@@ -223,22 +228,7 @@ class _HomeScreen extends State<HomeScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
-                    // image: DecorationImage(
-                    //     image: AssetImage(isTrain
-                    //         ? 'assets/images/trainLogo.png'
-                    //         : 'assets/images/busLogo.png'),
-                    //     // Replace with your image path
-                    //     fit: BoxFit.contain,
-                    //     opacity: 0.1 // Adjust how the image fits the container
-                    //     ),
                   ),
-                  // child: Lottie.asset(
-                  //   'assets/animation/train.json',
-                  //   fit: BoxFit.fill,
-                  //   repeat: true,
-                  //   reverse: true
-                  // ),
-
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -248,15 +238,162 @@ class _HomeScreen extends State<HomeScreen> {
                       Container(
                         width: double.infinity,
                         height: screenSize.height * 0.06,
-                        color: Colors.deepOrange.shade400,
+                        color: isTrain ? Colors.blue.shade400.withOpacity(0.5) : Colors.green.withOpacity(0.5),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment:isTrain ? MainAxisAlignment.spaceAround : MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              isTrain
+                                  ? "Indian Railway"
+                                  : '',
+                              style: isTrain? const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w900) : null,
+                            ),
+                            Image.asset(
+                              isTrain
+                                  ? 'assets/images/Indian_Railways.png'
+                                  : 'assets/images/bus_Logo_for_TC.png',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "Name: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "Rahul Prajapati",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8, right: 8),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  RichText(
+                                      text: const TextSpan(
+                                          text: "Designation: ",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal),
+                                          children: [
+                                            TextSpan(
+                                                text: "TC/CC",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold)),
+                                          ])),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8, left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "DOB: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "20-09-2002",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8, left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "Date of issue: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "31-01-2024",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8,left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "Date of expiry: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "31-10-2025",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                          ],),
+                          Image.asset('assets/images/femaleAvatar.gif'),
+                        ],
+                      ),
+
+                    ],
+                  ),
+                ) :
+                Container(
+                  width: screenSize.width,
+                  height: isLandScape
+                      ? screenSize.height * 0.50
+                      : screenSize.height * 0.25,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 12,
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: screenSize.height * 0.06,
+                        color:isTrain? Colors.deepOrange.shade400.withOpacity(0.8) : Colors.green.withOpacity(0.5),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment:isTrain ? MainAxisAlignment.spaceAround : MainAxisAlignment.start,
                           children: [
                             Text(
                               isTrain
                                   ? "Mumbai Local Train"
-                                  : "Mumbai Local Bus",
+                                  : "",
                               style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 24,
@@ -265,85 +402,87 @@ class _HomeScreen extends State<HomeScreen> {
                             Image.asset(
                               isTrain
                                   ? 'assets/images/trainLogo.png'
-                                  : 'assets/images/busLogo.png',
+                                  : 'assets/images/bus_Logo_for_TC.png',
                             ),
                           ],
                         ),
                       ),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8),
-                        child: RichText(
-                            text: const TextSpan(
-                                text: "Name: ",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.normal),
-                                children: [
-                              TextSpan(
-                                  text: "Rahul Prajapati",
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                            ])),
-                      ),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8, right: 8),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            RichText(
-                                text: const TextSpan(
-                                    text: "From: ",
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.normal),
-                                    children: [
-                                  TextSpan(
-                                      text: "Vasai Road",
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8,top: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "Name: ",
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ])),
-                            RichText(
-                                text: const TextSpan(
-                                    text: "To: ",
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.normal),
-                                    children: [
-                                  TextSpan(
-                                      text: "Virar",
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "Rahul Prajapati",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8, top: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "From: ",
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ])),
-                          ],
-                        ),
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "Vasai Road",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8,left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "To: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "Virar",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8, left: 8),
+                              child: RichText(
+                                  text: const TextSpan(
+                                      text: "Class: ",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal),
+                                      children: [
+                                        TextSpan(
+                                            text: "Second",
+                                            style:
+                                            TextStyle(fontWeight: FontWeight.bold)),
+                                      ])),
+                            ),
+                          ],),
+                          Image.asset('assets/images/maleAvatar.gif'),
+                        ],
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 8, left: 8),
-                        child: RichText(
-                            text: const TextSpan(
-                                text: "Class: ",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.normal),
-                                children: [
-                              TextSpan(
-                                  text: "Second",
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                            ])),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8, left: 8),
+                        padding: const EdgeInsets.only(top: 8, left: 20),
                         child: RichText(
                             text: const TextSpan(
                                 text: "Valid from: ",
@@ -421,7 +560,12 @@ class _HomeScreen extends State<HomeScreen> {
                                   ? palette.trainComponantColor
                                   : palette.busComponantColor),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () async {
+                              if (kDebugMode) {
+                                print("Tapped");
+                                print("The pass no. is: ${await dbServices.fetchUserPassNumber("958618358111")}");
+                              }
+                            },
                             child: Image.asset(
                               isTrain
                                   ? 'assets/images/trainPass.png'
@@ -492,8 +636,45 @@ class _HomeScreen extends State<HomeScreen> {
                           spreadRadius: 2)
                     ],
                   ),
-                  child: Center(
-                    child: Image.asset('assets/images/busPass.png'),
+                  child:widget.asTC ? Center(
+                    child: GestureDetector(
+                      onTap: (){
+
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey.withOpacity(0.8),
+                                blurRadius: 10,
+                                blurStyle: BlurStyle.outer
+                            )
+                          ],
+                        ),
+                        child: const Text("Verify Passenger",style: TextStyle(fontSize: 24,fontWeight: FontWeight.w700),),
+                      ),
+                    ),
+                  ) : Center(
+                    child: !isTrainPassAvailable ? Container(
+                      padding: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.8),
+                            blurRadius: 10,
+                            blurStyle: BlurStyle.outer
+                          ),
+                        ],
+                      ),
+                      child: QrImageView(
+                        data: qrData,
+                        version: QrVersions.auto,
+                        size: 200.0,
+                      ),
+                    ) : const Text("Pass Not Available",style: TextStyle(fontWeight: FontWeight.w700,fontSize: 24),),
                   ),
                 ),
               ],
@@ -527,5 +708,15 @@ class _HomeScreen extends State<HomeScreen> {
       print(
           "*********************************************************************");
     }
+  }
+
+  Future<String> getQRData() async{
+    qrData = await dbServices.fetchUserPassNumber("958618358111");
+    if (kDebugMode) {
+      print("*********************************>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<");
+      print(qrData);
+      print("*********************************>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<");
+    }
+    return qrData;
   }
 }

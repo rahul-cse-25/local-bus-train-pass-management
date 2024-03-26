@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/mongoDB.dart';
 import 'package:public_transit_pass_info/screens/NotificationScreen.dart';
+import 'package:public_transit_pass_info/screens/SignInAndSignUpScreen.dart';
 import 'package:public_transit_pass_info/screens/SplashScreen.dart';
 import 'package:public_transit_pass_info/screens/referralCode.dart';
 import 'package:public_transit_pass_info/services/authServices.dart';
@@ -54,7 +55,7 @@ class PassApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const SignInAndSignUpScreen(),
     );
   }
 }

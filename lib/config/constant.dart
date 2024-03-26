@@ -11,7 +11,7 @@ const TC_DETAILS_COLLECTION = 'tcDetails';
 
 
 // to import the csv file into mongodb
-// mongoimport --uri "mongodb+srv://rahul7507:rahul7507@cluster0.b2cmv2p.mongodb.net/PassInfo?retryWrites=true&w=majority&appName=Cluster0" --collection aadharDetails --type csv --headerline --file "E:\Mini_Project\public_transit_pass_info\assets\dataSets\indianAadharDataset.csv"
+// mongoimport --uri "mongodb+srv://rahul7507:rahul7507@cluster0.b2cmv2p.mongodb.net/PassInfo?retryWrites=true&w=majority&appName=Cluster0" --collection tcDetails --type csv --headerline --file "E:\Mini_Project\public_transit_pass_info\assets\dataSets\ticket_collectors.csv"
 
 const APP_LINK_OF_PLAYSTORE = 'https://bit.ly/ovadrive-invite';
 
