@@ -30,6 +30,62 @@ class MongoDatabase {
     return "Data Not found";
   }
 
+  Future<bool?> checkTCDetails(String fullName,String idNumber)async{
+    var db = await Db.create(MONGO_URL);
+    await db.open();
+    try{
+      var collection = db.collection(TC_DETAILS_COLLECTION);
+      var userQuery = {"name": fullName, "employee_no": idNumber};
+      var userDetail = await collection.findOne(userQuery);
+      if (kDebugMode) {
+        print("*********************************************************");
+        print("TC full name and idNumber from mongoDB.dart : ${userDetail?['name']} and ${userDetail?['employee_no']}");
+        print("*********************************************************");
+      }
+      return userDetail?.isNotEmpty;
+    }catch(ex){
+      if (kDebugMode) {
+        print("*********************************************************");
+        print("Error while fetching checking the TC Details : ${ex.toString()}");
+        print("*********************************************************");
+        return false;
+      }
+    }finally{
+      await db.close();
+    }
+    return false;
+  }
+
+  Future<bool?> isVerifiedTCDetails(String email)async{
+    var db = await Db.create(MONGO_URL);
+    await db.open();
+    try{
+      var collection = db.collection(USER_DETAILS_COLLECTION);
+      var userQuery = {"email": email};
+      var userDetail = await collection.findOne(userQuery);
+
+      if (userDetail != null) {
+        // Check if the user is a TC (isTC field is true)
+        bool? isTC = userDetail['isTC'];
+        return isTC ?? false; // If isTC is null, default to false
+      } else {
+        // User not found with the given email
+        return false;
+      }
+    }catch(ex){
+      if (kDebugMode) {
+        print("*********************************************************");
+        print("Error while fetching isTC true or false : ${ex.toString()}");
+        print("*********************************************************");
+        return false;
+      }
+    }finally{
+      await db.close();
+    }
+    return false;
+  }
+
+
   static Future<List<Map<String, dynamic>>> fetchUserDetails(String email, String dbCollection) async {
     var db = await Db.create(MONGO_URL);
     await db.open();

@@ -29,6 +29,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
   bool isTC = false;
   bool asTC = false;
 
+  final MongoDatabase dbServices = MongoDatabase();
 
   TextEditingController forgetEmail = TextEditingController();
   TextEditingController email = TextEditingController();
@@ -514,7 +515,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
       return;
     }
 
-    if(isTC && (fullNameOfTC.isNotEmpty && idNumber.isNotEmpty) && !isValidTCdetails(fullNameOfTC,idNumber)){
+    if(isTC && (fullNameOfTC.isNotEmpty && idNumber.isNotEmpty) && await isValidTCdetails(fullNameOfTC,idNumber) != true){
       UiHelper.customDialog(context, "Entered TC detail is not correct please fill the correct information or signUp as normal user", "OK");
       return;
     }else{
@@ -557,9 +558,15 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
   }
 
   signIn(String email, String password) async {
-    if(asTC && (email.isEmpty || password.isEmpty) && !isVerifiedTC(email)){
+    if(asTC && (email.isNotEmpty || password.isNotEmpty) && await isVerifiedTC(email) != true){
+      if (kDebugMode) {
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Came in asTC Login");
+      }
       UiHelper.customDialog(context, "Incorrect details! Pay attention while login.", "OK");
     }else{
+      if (kDebugMode) {
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Not Came in asTC Login");
+      }
       if (email.isEmpty || password.isEmpty) {
         UiHelper.customDialog(context, "Please Enter Credentials", "Ok");
       }
@@ -710,11 +717,21 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
     );
   }
 
-  bool isValidTCdetails(String fullNameOfTC, String idNumber) {
-    return true;
+  Future<bool?> isValidTCdetails(String fullNameOfTC, String idNumber) async {
+    bool? isValid = await dbServices.checkTCDetails(fullNameOfTC, idNumber);
+    if(isValid != null) {
+      return isValid;
+    } else {
+      return false;
+    }
   }
 
-  bool isVerifiedTC(String email) {
-    return false;
+  Future<bool?> isVerifiedTC(String email) async {
+    bool? isValid = await dbServices.isVerifiedTCDetails(email);
+    if(isValid != null) {
+      return isValid;
+    } else {
+      return false;
+    }
   }
 }
