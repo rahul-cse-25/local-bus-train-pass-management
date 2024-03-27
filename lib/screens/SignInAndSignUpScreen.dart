@@ -52,11 +52,11 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                 height: 250,
                 decoration: const BoxDecoration(
                     gradient: LinearGradient(
-                  colors: [
-                    palette.uperContainerFirst,
-                    palette.uperContainerSecond,
-                  ],
-                )),
+                      colors: [
+                        palette.uperContainerFirst,
+                        palette.uperContainerSecond,
+                      ],
+                    )),
                 child: Container(
                   margin: const EdgeInsets.only(left: 20, top: 80),
                   child: Column(
@@ -72,16 +72,19 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.w700),
                               children: [
-                            TextSpan(
-                              text: isSignUpScreen ? "to Pass Info" : "Back",
-                            ),
-                            TextSpan(
-                                text: isSignUpScreen
-                                    ? "\n\t\t  Sign Up"
-                                    : "\n\t\t  Sign In",
-                                style: const TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w400))
-                          ])),
+                                TextSpan(
+                                  text: isSignUpScreen
+                                      ? "to Pass Info"
+                                      : "Back",
+                                ),
+                                TextSpan(
+                                    text: isSignUpScreen
+                                        ? "\n\t\t  Sign Up"
+                                        : "\n\t\t  Sign In",
+                                    style: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w400))
+                              ])),
                     ],
                   ),
                 ),
@@ -94,9 +97,14 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             child: AnimatedContainer(
               duration: palette.formAnimeTime,
               curve: palette.containerFormAnimation,
-              height: isSignUpScreen && isTC ? 530 : isSignUpScreen && !isTC ? 425 : 250,
+              height: isSignUpScreen && isTC ? 530 : isSignUpScreen && !isTC
+                  ? 425
+                  : 250,
               padding: const EdgeInsets.all(20),
-              width: MediaQuery.of(context).size.width - 40,
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width - 40,
               margin: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -215,48 +223,49 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                 ]),
             child: !showShadow
                 ? GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        if (!isSignUpScreen) {
-                          signIn(
-                              email.text.toString(), password.text.toString());
-                        }
-                        if (isSignUpScreen) {
-                          signUp(
-                              email.text.toString(),
-                              password.text.toString(),
-                              userName.text.toString(),
-                              true,fullNameOfTC.text.toString(),idNumber.text.toString());
-                        }
-                        email.clear();
-                        password.clear();
-                        userName.clear();
-                      });
-                    },
-                    child: Container(
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                              colors: [
-                                Colors.orange.shade200,
-                                Colors.red.shade400
-                              ],
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight),
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: [
-                            if (showShadow)
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.3),
-                                  spreadRadius: 1,
-                                  blurRadius: 2,
-                                  offset: const Offset(0, 1))
-                          ]),
-                      child: const Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                      ),
-                    ),
-                  )
+              onTap: () {
+                setState(() {
+                  if (!isSignUpScreen) {
+                    signIn(
+                        email.text.toString(), password.text.toString());
+                  }
+                  if (isSignUpScreen) {
+                    signUp(
+                        email.text.toString(),
+                        password.text.toString(),
+                        userName.text.toString(),
+                        true, fullNameOfTC.text.toString(),
+                        idNumber.text.toString());
+                  }
+                  email.clear();
+                  password.clear();
+                  userName.clear();
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                        colors: [
+                          Colors.orange.shade200,
+                          Colors.red.shade400
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight),
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      if (showShadow)
+                        BoxShadow(
+                            color: Colors.black.withOpacity(0.3),
+                            spreadRadius: 1,
+                            blurRadius: 2,
+                            offset: const Offset(0, 1))
+                    ]),
+                child: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.white,
+                ),
+              ),
+            )
                 : const Center(),
           ),
         ));
@@ -281,17 +290,17 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             ),
             suffixIcon: isPassword
                 ? InkWell(
-                    onTap: () {
-                      setState(() {
-                        isHide = !isHide;
-                        if (kDebugMode) {
-                          print(isHide);
-                        }
-                      });
-                    },
-                    child:
-                        Icon(isHide ? Icons.visibility_off : Icons.visibility),
-                  )
+              onTap: () {
+                setState(() {
+                  isHide = !isHide;
+                  if (kDebugMode) {
+                    print(isHide);
+                  }
+                });
+              },
+              child:
+              Icon(isHide ? Icons.visibility_off : Icons.visibility),
+            )
                 : const SizedBox.shrink(),
             enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: palette.iconColor),
@@ -340,10 +349,13 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
       child: Column(
         children: [
           buildTextField(
-              Icons.person_2_outlined, "Username", false, false, true,userName),
-          buildTextField(Icons.mail_lock_outlined, "Email", false, true, false,email),
+              Icons.person_2_outlined, "Username", false, false, true,
+              userName),
           buildTextField(
-              Icons.lock_clock_outlined, "Password", true, false, false,password),
+              Icons.mail_lock_outlined, "Email", false, true, false, email),
+          buildTextField(
+              Icons.lock_clock_outlined, "Password", true, false, false,
+              password),
           Padding(
             padding: const EdgeInsets.only(top: 10, left: 10),
             child: Row(
@@ -429,9 +441,13 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             ],
           ),
           if(isTC)
-          buildTextField(Icons.drive_file_rename_outline, "Enter your Full Name", false, false, false,fullNameOfTC),
+            buildTextField(
+                Icons.drive_file_rename_outline, "Enter your Full Name", false,
+                false, false, fullNameOfTC),
           if(isTC)
-            buildTextField(Icons.perm_identity_outlined, "Enter your id number", false, false, false, idNumber),
+            buildTextField(
+                Icons.perm_identity_outlined, "Enter your id number", false,
+                false, false, idNumber),
           Container(
             width: 200,
             margin: const EdgeInsets.only(top: 20),
@@ -450,7 +466,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const TermsAndConditionsPage()));
+                                      const TermsAndConditionsPage()));
                             })
                     ])),
             // ),
@@ -466,8 +482,8 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
       margin: const EdgeInsets.only(top: 15),
       child: Column(
         children: [
-          buildTextField(Icons.mail_lock, "Email", false, true, false,email),
-          buildTextField(Icons.lock, "Password", true, false, false,password),
+          buildTextField(Icons.mail_lock, "Email", false, true, false, email),
+          buildTextField(Icons.lock, "Password", true, false, false, password),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -508,17 +524,20 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
     );
   }
 
-  signUp(String email, String password, String username, bool isMale,String fullNameOfTC,String idNumber) async {
-
-    if(isTC && (fullNameOfTC.isEmpty || idNumber.isEmpty)){
+  signUp(String email, String password, String username, bool isMale,
+      String fullNameOfTC, String idNumber) async {
+    if (isTC && (fullNameOfTC.isEmpty || idNumber.isEmpty)) {
       UiHelper.customDialog(context, "Please fill the TC details", "OK");
       return;
     }
 
-    if(isTC && (fullNameOfTC.isNotEmpty && idNumber.isNotEmpty) && await isValidTCdetails(fullNameOfTC,idNumber) != true){
-      UiHelper.customDialog(context, "Entered TC detail is not correct please fill the correct information or signUp as normal user", "OK");
+    if (isTC && (fullNameOfTC.isNotEmpty && idNumber.isNotEmpty) &&
+        await isValidTCdetails(fullNameOfTC, idNumber) != true) {
+      UiHelper.customDialog(context,
+          "Entered TC detail is not correct please fill the correct information or signUp as normal user",
+          "OK");
       return;
-    }else{
+    } else {
       if (username.isEmpty || email.isEmpty || password.isEmpty) {
         UiHelper.customDialog(context, 'Please Enter valid Credentials', 'OK');
       }
@@ -530,7 +549,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
               .then((value) async {
             User? user = FirebaseAuth.instance.currentUser;
             await MongoDatabase.saveUserData({
-              "userUID":user?.uid,
+              "userUID": user?.uid,
               "username": username,
               "email": email,
               "isMale": isMale,
@@ -558,14 +577,20 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
   }
 
   signIn(String email, String password) async {
-    if(asTC && (email.isNotEmpty || password.isNotEmpty) && await isVerifiedTC(email) != true){
+    if (asTC && (email.isNotEmpty || password.isNotEmpty) &&
+        await isVerifiedTC(email) != true) {
       if (kDebugMode) {
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Came in asTC Login");
       }
-      UiHelper.customDialog(context, "Incorrect details! Pay attention while login.", "OK");
-    }else{
+      UiHelper.customDialog(
+          context, "Incorrect details! Pay attention while login.", "OK");
+    } else if (!asTC && await isVerifiedTC(email) == true) {
+      UiHelper.customDialog(context, " Pay attention while login. If your are SignUp as TC then check the Login as TC", "OK");
+    }
+    else {
       if (kDebugMode) {
-        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Not Came in asTC Login");
+        print(
+            ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Not Came in asTC Login");
       }
       if (email.isEmpty || password.isEmpty) {
         UiHelper.customDialog(context, "Please Enter Credentials", "Ok");
@@ -580,7 +605,8 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => HomeScreen(userId: userId,asTC: asTC)));
+                    builder: (context) =>
+                        HomeScreen(userId: userId, asTC: asTC)));
             return null;
           });
         } on FirebaseAuthException catch (ex) {
@@ -611,7 +637,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
         builder: (BuildContext context) {
           return AlertDialog(
             shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             shadowColor: Colors.black,
             title: const Text(
               "Forget Password ?",
@@ -623,7 +649,10 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
             ),
             content: SizedBox(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 0.15,
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .height * 0.15,
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: Column(
@@ -636,7 +665,9 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                     Center(
                       child: ElevatedButton(
                           onPressed: () {
-                            if (forgetEmail.text.toString().isEmpty) {
+                            if (forgetEmail.text
+                                .toString()
+                                .isEmpty) {
                               UiHelper.customDialog(
                                   context, "Something went wrong", "OK");
                             } else {
@@ -655,14 +686,17 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
                                   RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(12))),
                               foregroundColor:
-                                  const MaterialStatePropertyAll(Colors.white),
+                              const MaterialStatePropertyAll(Colors.white),
                               backgroundColor:
-                                  const MaterialStatePropertyAll(Colors.blue),
+                              const MaterialStatePropertyAll(Colors.blue),
                               padding: MaterialStatePropertyAll(
                                   EdgeInsets.symmetric(
                                       horizontal:
-                                          MediaQuery.of(context).size.width *
-                                              0.25))),
+                                      MediaQuery
+                                          .of(context)
+                                          .size
+                                          .width *
+                                          0.25))),
                           child: const Text("Continue")),
                     ),
                   ],
@@ -719,7 +753,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
 
   Future<bool?> isValidTCdetails(String fullNameOfTC, String idNumber) async {
     bool? isValid = await dbServices.checkTCDetails(fullNameOfTC, idNumber);
-    if(isValid != null) {
+    if (isValid != null) {
       return isValid;
     } else {
       return false;
@@ -728,7 +762,7 @@ class _SignInAndSignUpScreen extends State<SignInAndSignUpScreen> {
 
   Future<bool?> isVerifiedTC(String email) async {
     bool? isValid = await dbServices.isVerifiedTCDetails(email);
-    if(isValid != null) {
+    if (isValid != null) {
       return isValid;
     } else {
       return false;
