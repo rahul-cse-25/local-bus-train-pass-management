@@ -1,7 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:mongo_dart/mongo_dart.dart';
+import 'package:provider/provider.dart';
 import 'package:public_transit_pass_info/config/constant.dart';
+
+import '../Provider/userProvider.dart';
 
 class MongoDatabase {
   Future<String> fetchUserPassNumber(String aadharNum) async {
@@ -196,19 +200,9 @@ class MongoDatabase {
   static connect() async {
     var db = await Db.create(MONGO_URL);
     await db.open();
-    // inspect(db);
-    // var status = db.serverStatus();
-    // if (kDebugMode) {
-    //   print(status);
-    // }
-    // var collection = db.collection(USER_DETAILS_COLLECTION);
-    // if (kDebugMode) {
-    //   print(await collection.find().toList());
-    // }
   }
 
-
-  Future<bool> checkAadhaarNumPresence() async {
+  Future<bool> checkAadhaarNumPresence(BuildContext context) async {
     var db = await Db.create(MONGO_URL);
     await db.open();
     User? user = FirebaseAuth.instance.currentUser;
@@ -222,7 +216,6 @@ class MongoDatabase {
         var aadhaarNum = userDoc['aadhaarNum'];
         if (aadhaarNum != null && aadhaarNum.isNotEmpty) {
           // Aadhaar number is present and not empty
-          // getPassDetails();
           return true;
         }
       }
@@ -241,6 +234,42 @@ class MongoDatabase {
     }
   }
 
+  Future<List<Map<String, dynamic>>> getPassDetails() async {
+    var db = await Db.create(MONGO_URL);
+    await db.open();
+    User? user = FirebaseAuth.instance.currentUser;
+
+    try {
+      var collection = db.collection(USER_DETAILS_COLLECTION);
+      var userQuery = {"userUID": user!.uid};
+      var userData = await collection.findOne(userQuery);
+
+      if (kDebugMode) {
+        print("Aadhaar Number of User: ${userData?['aadhaarNum']}");
+      }
+
+      var collection2 = db.collection(PASS_DETAILS_COLLECTION);
+      var userQuery2 = {"aadharNumber": userData?['aadhaarNum']};
+      var userDataForPass = await collection2.findOne(userQuery2);
+
+      if (userDataForPass != null) {
+        // Return user data as a list containing one user
+        return [userDataForPass];
+      } else {
+        // Return an empty list if the user is not found
+        return [];
+      }
+    } catch (error) {
+      // Handle errors and return an empty list
+      if (kDebugMode) {
+        print(error.toString());
+      }
+      return [];
+    } finally {
+      await db.close();
+    }
+    return [];
+  }
 
 }
 

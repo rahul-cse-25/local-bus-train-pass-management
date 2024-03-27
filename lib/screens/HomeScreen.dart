@@ -35,7 +35,7 @@ class _HomeScreen extends State<HomeScreen> {
   late String qrData = '';
   bool isTrainPassAvailable = false;
   bool isBusPassAvailable = false;
-  late List<String> userPassDetails;
+  List<Map<String, dynamic>> userPassDetails = [];
   bool _isAadhaarNumPresent = false;
 
   @override
@@ -447,17 +447,17 @@ class _HomeScreen extends State<HomeScreen> {
                                             padding: const EdgeInsets.only(
                                                 left: 8, top: 8),
                                             child: RichText(
-                                                text: const TextSpan(
+                                                text: TextSpan(
                                                     text: "Name: ",
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                         fontSize: 16,
                                                         color: Colors.black,
                                                         fontWeight:
                                                             FontWeight.normal),
                                                     children: [
                                                   TextSpan(
-                                                      text: "Rahul Prajapati",
-                                                      style: TextStyle(
+                                                      text: userPassDetails[0]['passengerName'],
+                                                      style: const TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold)),
                                                 ])),
@@ -466,17 +466,17 @@ class _HomeScreen extends State<HomeScreen> {
                                             padding: const EdgeInsets.only(
                                                 left: 8, top: 8),
                                             child: RichText(
-                                                text: const TextSpan(
+                                                text: TextSpan(
                                                     text: "From: ",
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                         fontSize: 16,
                                                         color: Colors.black,
                                                         fontWeight:
                                                             FontWeight.normal),
                                                     children: [
                                                   TextSpan(
-                                                      text: "Vasai Road",
-                                                      style: TextStyle(
+                                                      text: userPassDetails[0]['from'],
+                                                      style: const TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold)),
                                                 ])),
@@ -485,17 +485,17 @@ class _HomeScreen extends State<HomeScreen> {
                                             padding: const EdgeInsets.only(
                                                 top: 8, left: 8),
                                             child: RichText(
-                                                text: const TextSpan(
+                                                text: TextSpan(
                                                     text: "To: ",
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                         fontSize: 16,
                                                         color: Colors.black,
                                                         fontWeight:
                                                             FontWeight.normal),
                                                     children: [
                                                   TextSpan(
-                                                      text: "Virar",
-                                                      style: TextStyle(
+                                                      text: userPassDetails[0]['to'],
+                                                      style: const TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold)),
                                                 ])),
@@ -504,17 +504,17 @@ class _HomeScreen extends State<HomeScreen> {
                                             padding: const EdgeInsets.only(
                                                 top: 8, left: 8),
                                             child: RichText(
-                                                text: const TextSpan(
+                                                text: TextSpan(
                                                     text: "Class: ",
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                         fontSize: 16,
                                                         color: Colors.black,
                                                         fontWeight:
                                                             FontWeight.normal),
                                                     children: [
                                                   TextSpan(
-                                                      text: "Second",
-                                                      style: TextStyle(
+                                                      text: userPassDetails[0]['class'],
+                                                      style: const TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold)),
                                                 ])),
@@ -529,25 +529,25 @@ class _HomeScreen extends State<HomeScreen> {
                                     padding:
                                         const EdgeInsets.only(top: 8, left: 20),
                                     child: RichText(
-                                        text: const TextSpan(
+                                        text: TextSpan(
                                             text: "Valid from: ",
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                                 fontSize: 16,
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.normal),
                                             children: [
                                           TextSpan(
-                                              text: "31-01-2024",
-                                              style: TextStyle(
+                                              text: userPassDetails[0]['activationDate'],
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold)),
-                                          TextSpan(
+                                          const TextSpan(
                                               text: "  To  ",
                                               style: TextStyle(
                                                   fontWeight:
                                                       FontWeight.normal)),
                                           TextSpan(
-                                              text: "30-04-2024",
-                                              style: TextStyle(
+                                              text: userPassDetails[0]['ExppiryDate'],
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold)),
                                         ])),
                                   ),
@@ -968,7 +968,8 @@ class _HomeScreen extends State<HomeScreen> {
   }
 
   Future<void> _initializeScreen() async {
-    bool isAadhaarPresent = await dbServices.checkAadhaarNumPresence() == true;
+    bool isAadhaarPresent =
+        await dbServices.checkAadhaarNumPresence(context) == true;
     setState(() {
       _isAadhaarNumPresent = isAadhaarPresent;
     });
@@ -976,5 +977,12 @@ class _HomeScreen extends State<HomeScreen> {
       print(
           '>>>>>>>>>>>>>>>>>>>>>>>Presence of Aadhaar Number: $_isAadhaarNumPresent');
     }
+    if (_isAadhaarNumPresent) {
+      userPassDetails = await dbServices.getPassDetails();
+      if (kDebugMode) {
+        print("<><><><><><><><><><><><><><> User Pass Details: $userPassDetails <><><><><><><><><><><><><><>");
+      }
+    }
+    setState(() {});
   }
 }
